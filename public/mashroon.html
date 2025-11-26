@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushroom Do Pyaza Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f0f8f0;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #c8e6c9, #f0f8f0);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #388e3c;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #e8f5e9;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #2e7d32;
+        }
+
+        .info-card h3 {
+            color: #2e7d32;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #2e7d32;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Mushroom Do Pyaza</h1>
+            <p>Flavorful mushrooms cooked with double the onions in a spicy, aromatic gravy. A quick, hearty vegetarian dish that's restaurant-style and ready in under 40 minutes!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="mashroom.png" alt="Delicious Mushroom Do Pyaza">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>15 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>25 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Main Dish:</h3>
+        <ul>
+            <li>400g button mushrooms, cleaned and quartered</li>
+            <li>4 large onions (2 finely chopped for base, 2 sliced into thick rings for "do pyaza")</li>
+            <li>2 medium tomatoes, pureed</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>2-3 green chilies, slit (adjust to taste)</li>
+            <li>2 tbsp oil or ghee</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>For the Masala:</h3>
+        <ul>
+            <li>1 tsp cumin seeds</li>
+            <li>1 bay leaf</li>
+            <li>1-inch cinnamon stick</li>
+            <li>2-3 cloves</li>
+            <li>1 tsp red chili powder</li>
+            <li>½ tsp turmeric powder</li>
+            <li>1 tsp coriander powder</li>
+            <li>½ tsp cumin powder</li>
+            <li>1 tsp garam masala</li>
+            <li>½ tsp amchur (dry mango powder) or 1 tsp lemon juice</li>
+            <li>Fresh coriander leaves, chopped for garnish</li>
+        </ul>
+
+        <h3>Optional Add-Ins:</h3>
+        <ul>
+            <li>½ cup bell peppers or capsicum, cubed (for color and crunch)</li>
+            <li>¼ cup yogurt or cream (for a richer gravy)</li>
+            <li>1 tsp kasuri methi (dried fenugreek leaves, crushed)</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prep the Ingredients:</strong>
+                <ul>
+                    <li>Clean the mushrooms by wiping with a damp cloth (avoid soaking). Trim stems if tough and quarter them.</li>
+                    <li>Prepare onions: Finely chop 2 onions for the base. Slice the remaining 2 into thick rings or half-moons for the "do pyaza" effect.</li>
+                    <li>Puree the tomatoes. Keep ginger-garlic paste, chilies, and spices ready.</li>
+                    <li>If using bell peppers, cube them and set aside.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Sauté the Base Onions:</strong>
+                <ul>
+                    <li>Heat 2 tbsp oil or ghee in a wide pan or kadai over medium heat.</li>
+                    <li>Add cumin seeds, bay leaf, cinnamon, and cloves. Let them sizzle for 20-30 seconds until fragrant.</li>
+                    <li>Add the finely chopped onions and green chilies. Sauté until golden brown (8-10 minutes). Stir frequently to avoid burning.</li>
+                    <li>Stir in ginger-garlic paste and cook for 1-2 minutes until the raw aroma fades.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Cook the Masala:</strong>
+                <ul>
+                    <li>Add tomato puree, red chili powder, turmeric, coriander powder, cumin powder, and salt.</li>
+                    <li>Cook on medium heat for 4-5 minutes, stirring until the masala thickens and oil starts separating from the edges.</li>
+                    <li>If using yogurt or cream, whisk it in now and cook for another 2 minutes to prevent curdling.</li>
+                    <li>Add ¼ cup water if the masala is too dry, and mix well.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add Mushrooms and Do Pyaza Onions:</strong>
+                <ul>
+                    <li>Add the quartered mushrooms (and bell peppers if using). Toss to coat with the masala.</li>
+                    <li>Cook uncovered on medium-high heat for 5-7 minutes, stirring occasionally, until mushrooms release moisture and soften slightly.</li>
+                    <li>Now add the sliced onion rings. Gently mix them in — they should remain crisp and not fully cooked through.</li>
+                    <li>Sprinkle garam masala, amchur (or lemon juice), and kasuri methi if using. Stir and cook for 2-3 more minutes.</li>
+                    <li>The gravy should be semi-dry to medium consistency. If too thick, add a splash of water. Taste and adjust spices/salt.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Finish and Garnish:</strong>
+                <ul>
+                    <li>Turn off the heat. Garnish with fresh coriander leaves.</li>
+                    <li>Let it rest for 5 minutes — flavors will meld beautifully.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Serve hot with naan, roti, paratha, or steamed rice.</li>
+                    <li>Pair with a side of raita or salad for a complete meal.</li>
+                    <li>Perfect for weeknight dinners or as a side in thalis!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🥘</h2>
+        <ul>
+            <li>Use fresh button mushrooms for best texture; don't overcook them to keep them meaty.</li>
+            <li>For a drier version, skip the tomato puree and use just onions with spices.</li>
+            <li>Add paneer cubes for a protein boost — toss in during the last 2 minutes.</li>
+            <li>Vegan-friendly: Use oil instead of ghee and skip yogurt/cream.</li>
+            <li>The "do pyaza" magic comes from adding onions twice — once cooked, once fresh for crunch.</li>
+            <li>Spice it up: Add chopped green chilies or fresh black pepper for heat.</li>
+            <li>Make it creamy: Stir in cashew paste or coconut milk at the end.</li>
+            <li>Prep tip: Slice onions uniformly for even cooking.</li>
+            <li>For low-carb, serve with cauliflower rice instead of naan.</li>
+            <li>Store leftovers in fridge for 2-3 days; reheat gently to retain mushroom texture.</li>
+            <li>Double the recipe for meal prep — freezes well for up to a month.</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2zq4v0zq4z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

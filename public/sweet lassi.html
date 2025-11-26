@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Lassi Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff5f0;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffd7c4, #fff5f0);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #ff7043;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #ff7043;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #f4511e;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #ffe4d9;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #ff7043;
+        }
+
+        .info-card h3 {
+            color: #ff7043;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #ff7043;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #ff7043;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #ff7043;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Sweet Lassi</h1>
+            <p>The iconic Punjabi yogurt drink — creamy, smooth, and perfectly sweet. A refreshing beverage that cools you down on hot summer days. Simple to make, impossible to resist!</p>
+            <a href="#recipe" class="btn">Start Making</a>
+        </div>
+        <div class="hero-img">
+            <img src="chass.png" alt="Delicious Sweet Lassi">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>5 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>0 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>2-3 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Very Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>Main Ingredients:</h3>
+        <ul>
+            <li>2 cups fresh yogurt (curd/dahi) - chilled</li>
+            <li>1/2 cup cold water or milk</li>
+            <li>3-4 tbsp sugar (adjust to taste)</li>
+            <li>1/4 tsp cardamom powder</li>
+            <li>Ice cubes (as needed)</li>
+        </ul>
+
+        <h3>For Garnish:</h3>
+        <ul>
+            <li>A pinch of saffron strands (optional)</li>
+            <li>Crushed pistachios or almonds</li>
+            <li>Rose petals (optional)</li>
+            <li>A sprinkle of cardamom powder</li>
+        </ul>
+
+        <h3>Optional Add-ins:</h3>
+        <ul>
+            <li>1-2 tsp rose water or kewra water</li>
+            <li>2-3 drops vanilla essence</li>
+            <li>Fresh cream for extra richness</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Making Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Yogurt:</strong>
+                <ul>
+                    <li>Make sure your yogurt is fresh and chilled.</li>
+                    <li>If the yogurt is too thick, it's perfect for lassi!</li>
+                    <li>If you have homemade yogurt, that works best.</li>
+                    <li>Take the yogurt in a large bowl or blender jar.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add Sugar and Cardamom:</strong>
+                <ul>
+                    <li>Add sugar to the yogurt.</li>
+                    <li>Add cardamom powder for that authentic flavor.</li>
+                    <li>If using saffron, soak a few strands in 1 tablespoon of warm milk and add it.</li>
+                    <li>If using rose water or kewra water, add it now.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Blend Until Smooth:</strong>
+                <ul>
+                    <li>Add cold water or milk to adjust consistency.</li>
+                    <li>Blend everything together using a hand blender or regular blender.</li>
+                    <li>Blend for 1-2 minutes until the mixture is smooth, creamy, and frothy.</li>
+                    <li>You should see a nice frothy layer on top.</li>
+                    <li>If it's too thick, add more water; if too thin, add more yogurt.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve Chilled:</strong>
+                <ul>
+                    <li>Add ice cubes to serving glasses.</li>
+                    <li>Pour the lassi over the ice.</li>
+                    <li>Garnish with crushed pistachios or almonds.</li>
+                    <li>Sprinkle a pinch of cardamom powder on top.</li>
+                    <li>Add rose petals if using for a beautiful presentation.</li>
+                    <li>Serve immediately while it's cold and frothy!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Tips & Variations 🥛</h2>
+        <ul>
+            <li>The key to great lassi is using fresh, good-quality yogurt - preferably full-fat.</li>
+            <li>Blend well to achieve that signature frothy top layer.</li>
+            <li>Always serve lassi chilled - it tastes best ice-cold!</li>
+            <li>Don't skip the cardamom - it adds that authentic Punjabi flavor.</li>
+            <li>Adjust sugar according to your preference - some like it very sweet, others prefer mildly sweet.</li>
+            <li>Try mango lassi: Add 1 cup mango pulp or fresh mango chunks while blending.</li>
+            <li>Try strawberry lassi: Add fresh or frozen strawberries while blending.</li>
+            <li>Try malai lassi: Add 2-3 tablespoons of fresh cream for extra richness.</li>
+            <li>Try masala lassi: Skip sugar, add salt, roasted cumin powder, and mint for a savory version.</li>
+            <li>For vegan version: Use coconut yogurt or cashew yogurt with plant-based milk.</li>
+            <li>Lassi aids digestion and is rich in probiotics - perfect after heavy meals!</li>
+            <li>In Punjabi dhabas, lassi is traditionally served in tall steel glasses or earthen kulhads.</li>
+        </ul>
+
+        <div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K9R7KcaettM?si=1Z8rujXM9_ORlZwL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

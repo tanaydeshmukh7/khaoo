@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Beer Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff9e6;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffd54f, #fff9e6);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #f57c00;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #f57c00;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e65100;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #ffecb3;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #f57c00;
+        }
+
+        .info-card h3 {
+            color: #f57c00;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #f57c00;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #f57c00;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #f57c00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #f57c00;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .warning-box strong {
+            color: #f57c00;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Rice Beer (Apong/Xaj)</h1>
+            <p>The traditional tribal beverage from Northeast India — a mildly alcoholic, naturally fermented drink made from rice. Known as Apong in Arunachal Pradesh and Xaj in Assam. A cultural drink enjoyed during festivals and celebrations!</p>
+            <a href="#recipe" class="btn">Start Brewing</a>
+        </div>
+        <div class="hero-img">
+            <img src="beer.png" alt="Traditional Rice Beer">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>30 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Fermentation</h3>
+            <p>3-7 days</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>8-10 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Medium</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <div class="warning-box">
+            <strong>Important Note:</strong> This recipe is for traditional rice beer preparation. The brewing process involves natural fermentation. Please ensure you are of legal drinking age in your region. Always consume responsibly and follow local laws regarding home brewing.
+        </div>
+
+        <h2>Ingredients</h2>
+        
+        <h3>Main Ingredients:</h3>
+        <ul>
+            <li>2 kg sticky rice (glutinous rice) or regular rice</li>
+            <li>50-100 grams rice yeast cake (marcha/bakhar) - available at Asian stores</li>
+            <li>Water for cooking and fermenting</li>
+        </ul>
+
+        <h3>Equipment Needed:</h3>
+        <ul>
+            <li>Large pot for cooking rice</li>
+            <li>Clean earthen pot or food-grade plastic container with lid</li>
+            <li>Clean cloth or muslin</li>
+            <li>Banana leaves (optional, traditional)</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Brewing Process</h2>
+
+        <ol>
+            <li>
+                <strong>Cook the Rice:</strong>
+                <ul>
+                    <li>Wash the rice thoroughly 2-3 times and drain.</li>
+                    <li>Cook the rice until it's fully cooked but not mushy (slightly firm).</li>
+                    <li>You can steam or boil the rice - steaming is preferred for traditional rice beer.</li>
+                    <li>Spread the cooked rice on a clean cloth or tray to cool completely to room temperature.</li>
+                    <li>The rice should be completely cool before adding yeast.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Yeast:</strong>
+                <ul>
+                    <li>Take the rice yeast cake (marcha/bakhar) and crush it into a fine powder.</li>
+                    <li>If the yeast cake is hard, you can use a mortar and pestle or grinder.</li>
+                    <li>Sift to remove any large particles.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Mix Rice with Yeast:</strong>
+                <ul>
+                    <li>Once the rice is completely cool, transfer it to a large clean bowl.</li>
+                    <li>Sprinkle the powdered yeast evenly over the rice.</li>
+                    <li>Mix gently but thoroughly with clean hands, ensuring the yeast is evenly distributed.</li>
+                    <li>Add a few tablespoons of lukewarm water if the mixture seems too dry.</li>
+                    <li>The rice should be slightly moist but not wet.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Fermentation Process:</strong>
+                <ul>
+                    <li>Transfer the yeast-mixed rice into a clean earthen pot or food-grade container.</li>
+                    <li>If using banana leaves, line the pot with them (traditional method).</li>
+                    <li>Press the rice mixture gently and flatten the top.</li>
+                    <li>Make a small depression or hole in the center (this is where the liquid will collect).</li>
+                    <li>Cover with a clean cloth and then with a lid.</li>
+                    <li>Store in a warm, dark place for fermentation.</li>
+                    <li>The ideal temperature is 25-30°C (77-86°F).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Monitor Fermentation:</strong>
+                <ul>
+                    <li>After 24-48 hours, you'll notice liquid collecting in the center depression.</li>
+                    <li>The rice will start to smell sweet and slightly alcoholic.</li>
+                    <li>Let it ferment for 3-7 days depending on desired strength and taste.</li>
+                    <li>Shorter fermentation = milder, sweeter taste.</li>
+                    <li>Longer fermentation = stronger, more alcoholic taste.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Extract and Serve:</strong>
+                <ul>
+                    <li>After fermentation, the rice beer is ready.</li>
+                    <li>To drink, add water to the fermented rice (about 2-3 cups per cup of rice).</li>
+                    <li>Mix well and let it sit for 10-15 minutes.</li>
+                    <li>Strain through a clean cloth or fine sieve.</li>
+                    <li>The liquid is your rice beer!</li>
+                    <li>Serve chilled or at room temperature.</li>
+                    <li>The leftover rice can be used for another extraction by adding more water.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Tips & Variations 🍺</h2>
+        <ul>
+            <li>Cleanliness is crucial - all utensils and containers must be thoroughly clean to prevent bad bacteria.</li>
+            <li>Temperature control is key - too cold and fermentation won't happen, too hot and it may spoil.</li>
+            <li>The yeast cake (marcha) is essential - it contains wild yeasts and enzymes for fermentation.</li>
+            <li>Sticky rice gives a sweeter, more traditional taste, but regular rice works too.</li>
+            <li>The first extraction is the strongest, subsequent extractions are milder.</li>
+            <li>Store fermented rice in the refrigerator to slow down fermentation after desired taste is achieved.</li>
+            <li>Different tribes have variations - some add herbs, some use different rice varieties.</li>
+            <li>In Sikkim, it's called Chhaang and often served warm in bamboo containers.</li>
+            <li>Rice beer is rich in probiotics and B vitamins.</li>
+            <li>Always taste test during fermentation to achieve your preferred flavor profile.</li>
+            <li>Consume within 2-3 days after extraction for best taste.</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9kxYgKXjIUU" title="Rice Beer Recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

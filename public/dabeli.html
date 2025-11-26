@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dabeli Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8e1;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffe082, #fff8e1);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #ff6f00;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #ff6f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e65100;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff3e0;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #ff6f00;
+        }
+
+        .info-card h3 {
+            color: #ff6f00;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #ff6f00;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #ff6f00;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #ff6f00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Dabeli</h1>
+            <p>The famous Gujarati street food — a spicy, sweet, and tangy potato filling stuffed in pav, topped with pomegranate, sev, and peanuts. A flavor explosion from Kutch that's taken India by storm!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="dabeli.png" alt="Delicious Dabeli">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>15 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>20 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Dabeli Masala:</h3>
+        <ul>
+            <li>2 tbsp coriander seeds</li>
+            <li>1 tbsp cumin seeds</li>
+            <li>4-5 cloves</li>
+            <li>1 small cinnamon stick</li>
+            <li>4-5 dry red chilies</li>
+            <li>1 tsp fennel seeds</li>
+            <li>4-5 black peppercorns</li>
+            <li>(Or use 3 tbsp readymade dabeli masala)</li>
+        </ul>
+
+        <h3>For the Filling:</h3>
+        <ul>
+            <li>4 medium potatoes, boiled and mashed</li>
+            <li>2 tbsp oil</li>
+            <li>3 tbsp dabeli masala (homemade or store-bought)</li>
+            <li>2 tbsp tamarind chutney</li>
+            <li>1 tbsp jaggery or sugar</li>
+            <li>Salt to taste</li>
+            <li>1/4 cup water</li>
+            <li>2 tbsp chopped coriander leaves</li>
+        </ul>
+
+        <h3>For Assembly:</h3>
+        <ul>
+            <li>8 pav buns</li>
+            <li>Butter for toasting</li>
+            <li>Garlic chutney</li>
+            <li>Tamarind chutney</li>
+            <li>Green chutney</li>
+            <li>1/2 cup roasted peanuts, crushed</li>
+            <li>1/2 cup pomegranate seeds</li>
+            <li>1 cup fine sev (nylon sev)</li>
+            <li>Finely chopped onions (optional)</li>
+            <li>Fresh coriander leaves for garnish</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare Dabeli Masala (Optional - if making from scratch):</strong>
+                <ul>
+                    <li>Dry roast coriander seeds, cumin seeds, cloves, cinnamon, red chilies, fennel seeds, and peppercorns.</li>
+                    <li>Roast on low heat until aromatic (about 2-3 minutes).</li>
+                    <li>Let it cool completely, then grind to a fine powder.</li>
+                    <li>Store in an airtight container or use immediately.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Potato Filling:</strong>
+                <ul>
+                    <li>Heat oil in a pan.</li>
+                    <li>Add dabeli masala and sauté for 30 seconds on low heat.</li>
+                    <li>Add tamarind chutney, jaggery, and salt. Mix well.</li>
+                    <li>Add water and let it come to a boil.</li>
+                    <li>Add mashed potatoes and mix everything together.</li>
+                    <li>Cook for 3-4 minutes until the mixture comes together and is slightly dry.</li>
+                    <li>Add chopped coriander leaves and mix.</li>
+                    <li>Turn off heat and let the filling cool.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Toast the Pav:</strong>
+                <ul>
+                    <li>Slice the pav horizontally without cutting all the way through.</li>
+                    <li>Spread garlic chutney on both inner sides of the pav.</li>
+                    <li>Heat a griddle or tawa and add a little butter.</li>
+                    <li>Toast the pav on both sides until golden and crispy.</li>
+                    <li>Remove and set aside.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Assemble the Dabeli:</strong>
+                <ul>
+                    <li>Open the toasted pav and spread green chutney on one side.</li>
+                    <li>Spread tamarind chutney on the other side.</li>
+                    <li>Place a generous portion of the potato filling in the center.</li>
+                    <li>Top with chopped onions (if using).</li>
+                    <li>Sprinkle crushed roasted peanuts generously.</li>
+                    <li>Add pomegranate seeds for that burst of freshness.</li>
+                    <li>Top with a generous amount of fine sev.</li>
+                    <li>Garnish with fresh coriander leaves.</li>
+                    <li>Gently press the dabeli and serve immediately while it's crispy!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Tips & Variations 🥜</h2>
+        <ul>
+            <li>The key to great dabeli is the balance of sweet, spicy, and tangy flavors.</li>
+            <li>Adjust jaggery and tamarind according to your taste preference.</li>
+            <li>Toast the pav with butter for that authentic street food taste.</li>
+            <li>Don't skip the pomegranate - it adds a wonderful burst of freshness!</li>
+            <li>Use fresh sev for the best crunch - add it just before serving.</li>
+            <li>The filling can be made ahead and refrigerated for 2-3 days.</li>
+            <li>Try cheese dabeli: Add grated cheese along with other toppings.</li>
+            <li>Try schezwan dabeli: Mix some schezwan sauce in the filling for a fusion twist.</li>
+            <li>For spicier dabeli, add more red chili powder to the filling.</li>
+            <li>Serve with fried green chilies and additional chutneys on the side!</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8bLu7kuOKRI" title="Dabeli Recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

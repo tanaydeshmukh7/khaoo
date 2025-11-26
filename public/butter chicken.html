@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butter Chicken Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8f2;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffe4cc, #fff8f2);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #d94900;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #d94900;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff6b1a;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff1e6;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #d94900;
+        }
+
+        .info-card h3 {
+            color: #d94900;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #d94900;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #d94900;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #d94900;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Butter Chicken</h1>
+            <p>The iconic North Indian classic — tender chicken in a rich, creamy tomato-based gravy, infused with aromatic spices and finished with butter.</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="masala-chicken.png" alt="Delicious Butter Chicken">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>20 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>40 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Chicken Marinade:</h3>
+        <ul>
+            <li>500g boneless chicken (cut into cubes)</li>
+            <li>½ cup yogurt</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>1 tsp red chili powder</li>
+            <li>½ tsp turmeric powder</li>
+            <li>1 tsp garam masala</li>
+            <li>Salt to taste</li>
+            <li>1 tbsp lemon juice</li>
+        </ul>
+
+        <h3>For the Gravy:</h3>
+        <ul>
+            <li>4-5 large tomatoes, pureed</li>
+            <li>2 tbsp butter</li>
+            <li>2 tbsp oil</li>
+            <li>1 large onion, finely chopped</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>2 green cardamoms</li>
+            <li>2-3 cloves</li>
+            <li>1 bay leaf</li>
+            <li>1 tsp red chili powder</li>
+            <li>1 tsp coriander powder</li>
+            <li>½ tsp garam masala</li>
+            <li>1 tsp kasuri methi (dried fenugreek leaves)</li>
+            <li>½ cup fresh cream</li>
+            <li>1 tbsp honey or sugar (optional)</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>For Garnish:</h3>
+        <ul>
+            <li>Fresh cream</li>
+            <li>Fresh coriander leaves</li>
+            <li>1 tbsp butter</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Marinate the Chicken:</strong>
+                <ul>
+                    <li>Mix yogurt, ginger-garlic paste, red chili powder, turmeric, garam masala, salt, and lemon juice in a bowl.</li>
+                    <li>Add chicken pieces and coat well with the marinade.</li>
+                    <li>Cover and refrigerate for at least 30 minutes (2 hours for best results).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Cook the Chicken:</strong>
+                <ul>
+                    <li>Heat 1 tbsp butter and 1 tbsp oil in a pan over medium-high heat.</li>
+                    <li>Add marinated chicken pieces and cook until slightly charred and cooked through (8-10 minutes).</li>
+                    <li>Remove chicken and set aside.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Gravy Base:</strong>
+                <ul>
+                    <li>In the same pan, add remaining butter and oil.</li>
+                    <li>Add bay leaf, cardamom, and cloves. Sauté for 30 seconds.</li>
+                    <li>Add chopped onions and cook until golden brown (5-7 minutes).</li>
+                    <li>Add ginger-garlic paste and cook for 1-2 minutes until raw smell disappears.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add Tomatoes & Spices:</strong>
+                <ul>
+                    <li>Pour in the tomato puree and cook on medium heat for 10-12 minutes until oil separates.</li>
+                    <li>Add red chili powder, coriander powder, salt, and honey/sugar.</li>
+                    <li>Cook for another 3-4 minutes, stirring continuously.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Create the Creamy Sauce:</strong>
+                <ul>
+                    <li>Lower the heat and add cooked chicken pieces to the gravy.</li>
+                    <li>Crush kasuri methi between your palms and add to the curry.</li>
+                    <li>Pour in fresh cream and mix gently.</li>
+                    <li>Add garam masala and simmer for 5 minutes.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Garnish with a dollop of fresh cream, butter, and chopped coriander.</li>
+                    <li>Serve hot with naan, roti, or steamed basmati rice.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🍽️</h2>
+        <ul>
+            <li>For a richer taste, add a tablespoon of cashew paste to the gravy.</li>
+            <li>You can use canned tomato puree for convenience.</li>
+            <li>Adjust the cream quantity based on your preferred consistency.</li>
+            <li>For smoky flavor, place a piece of charcoal in a bowl, add butter on top, and place inside the curry pot with lid closed for 2 minutes.</li>
+            <li>Kasuri methi is essential for authentic butter chicken flavor — don't skip it!</li>
+            <li>Use tandoori chicken instead of plain marinated chicken for extra flavor.</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a03U45jFxOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

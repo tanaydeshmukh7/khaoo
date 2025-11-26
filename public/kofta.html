@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malai Kofta Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f0f8f0;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #c8e6c9, #f0f8f0);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #388e3c;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #e8f5e9;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #2e7d32;
+        }
+
+        .info-card h3 {
+            color: #2e7d32;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #2e7d32;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Malai Kofta</h1>
+            <p>Royal and indulgent — crispy, golden kofta balls made with paneer and potatoes, dunked in a rich, creamy tomato gravy. A showstopper dish for special occasions!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="kofta.png" alt="Delicious Malai Kofta">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>30 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>35 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Medium</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Kofta:</h3>
+        <ul>
+            <li>200g paneer, grated</li>
+            <li>2 medium potatoes, boiled and mashed</li>
+            <li>2 tbsp cornflour</li>
+            <li>2 tbsp all-purpose flour (maida)</li>
+            <li>1 tsp ginger-garlic paste</li>
+            <li>2 green chilies, finely chopped</li>
+            <li>2 tbsp fresh coriander, chopped</li>
+            <li>½ tsp garam masala</li>
+            <li>½ tsp red chili powder</li>
+            <li>Salt to taste</li>
+            <li>10-12 cashews or raisins (for stuffing)</li>
+            <li>Oil for deep frying</li>
+        </ul>
+
+        <h3>For the Gravy:</h3>
+        <ul>
+            <li>4 large tomatoes, roughly chopped</li>
+            <li>2 medium onions, roughly chopped</li>
+            <li>10-12 cashews (for gravy)</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>2-3 green chilies</li>
+            <li>1-inch cinnamon stick</li>
+            <li>3-4 green cardamom pods</li>
+            <li>3-4 cloves</li>
+            <li>1 bay leaf</li>
+        </ul>
+
+        <h3>Spice Powders:</h3>
+        <ul>
+            <li>1 tsp red chili powder</li>
+            <li>½ tsp turmeric powder</li>
+            <li>1 tsp coriander powder</li>
+            <li>1 tsp cumin powder</li>
+            <li>1 tsp garam masala</li>
+            <li>1 tsp kasuri methi (dried fenugreek)</li>
+            <li>Salt to taste</li>
+            <li>1 tsp sugar (to balance acidity)</li>
+        </ul>
+
+        <h3>For Finishing:</h3>
+        <ul>
+            <li>½ cup fresh cream or malai</li>
+            <li>2 tbsp butter</li>
+            <li>3 tbsp oil or ghee</li>
+            <li>Fresh coriander leaves for garnish</li>
+            <li>A pinch of saffron soaked in 2 tbsp warm milk (optional)</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Kofta Mixture:</strong>
+                <ul>
+                    <li>Grate the paneer finely or crumble it well.</li>
+                    <li>Boil potatoes, peel, and mash them completely (no lumps!).</li>
+                    <li>In a large bowl, mix paneer, mashed potatoes, cornflour, maida, ginger-garlic paste, green chilies, coriander, garam masala, red chili powder, and salt.</li>
+                    <li>Mix well until everything comes together into a non-sticky dough.</li>
+                    <li>If the mixture is too soft, add more cornflour. If too dry, add a little milk.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Shape and Stuff the Koftas:</strong>
+                <ul>
+                    <li>Divide the mixture into 12-14 equal portions.</li>
+                    <li>Take one portion, flatten it slightly in your palm.</li>
+                    <li>Place a cashew or 2-3 raisins in the center.</li>
+                    <li>Seal it well and roll into a smooth, round ball.</li>
+                    <li>Make sure there are no cracks (or they'll break while frying).</li>
+                    <li>Repeat with all portions and keep aside.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Fry the Koftas:</strong>
+                <ul>
+                    <li>Heat oil in a deep pan on medium-high heat.</li>
+                    <li>Test oil by dropping a small piece of mixture — it should rise slowly.</li>
+                    <li>Gently slide 4-5 koftas into the hot oil.</li>
+                    <li>Fry on medium heat, turning gently until golden brown and crispy (5-6 minutes).</li>
+                    <li>Remove with a slotted spoon and drain on paper towels.</li>
+                    <li>Fry all koftas and set aside. Don't add to gravy until just before serving!</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Make the Gravy Base:</strong>
+                <ul>
+                    <li>In a pan, add chopped tomatoes, onions, cashews, green chilies, and 1 cup water.</li>
+                    <li>Bring to boil and cook for 10-12 minutes until everything is soft.</li>
+                    <li>Let it cool completely, then blend into a smooth puree.</li>
+                    <li>Strain the puree for silky smooth gravy (optional but recommended).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Temper the Whole Spices:</strong>
+                <ul>
+                    <li>Heat 3 tbsp oil or ghee in a heavy-bottomed pan.</li>
+                    <li>Add bay leaf, cinnamon, cardamom, and cloves.</li>
+                    <li>Sauté for 30 seconds until fragrant.</li>
+                    <li>Add ginger-garlic paste and cook for 1-2 minutes.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Cook the Gravy:</strong>
+                <ul>
+                    <li>Add the tomato-onion puree to the tempered spices.</li>
+                    <li>Add red chili powder, turmeric, coriander powder, cumin powder, and salt.</li>
+                    <li>Cook on medium heat for 10-12 minutes, stirring frequently.</li>
+                    <li>The gravy should thicken and oil should start separating from sides.</li>
+                    <li>Add sugar to balance the tanginess.</li>
+                    <li>Add water to achieve desired consistency (medium thick).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Finish the Gravy:</strong>
+                <ul>
+                    <li>Lower the heat and add fresh cream, mixing well.</li>
+                    <li>Add butter for richness and shine.</li>
+                    <li>Crush kasuri methi between your palms and add.</li>
+                    <li>Sprinkle garam masala and mix.</li>
+                    <li>Add saffron milk if using for royal flavor and color.</li>
+                    <li>Simmer for 2-3 minutes. The gravy should be smooth and creamy.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Just before serving, gently place koftas into the hot gravy.</li>
+                    <li>Let them soak for 2-3 minutes (don't leave too long or they'll become soggy!).</li>
+                    <li>Garnish with fresh cream swirl and coriander leaves.</li>
+                    <li>Serve hot with naan, kulcha, butter roti, or jeera rice!</li>
+                    <li>Perfect for parties, special occasions, or weekend treats!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🥘</h2>
+        <ul>
+            <li>The key to perfect koftas is the right paneer-to-potato ratio (1:1 or 1:2).</li>
+            <li>Always fry koftas on medium heat for even cooking and golden color.</li>
+            <li>Add koftas to gravy only just before serving to keep them crispy!</li>
+            <li>For extra richness, add khoya (mawa) to the kofta mixture.</li>
+            <li>You can make koftas ahead and store in fridge — fry just before serving.</li>
+            <li>For vegan version, use tofu instead of paneer and coconut cream instead of dairy.</li>
+            <li>Strain the gravy for restaurant-style smoothness.</li>
+            <li>Don't skip the cashews in gravy — they add creaminess and body.</li>
+            <li>For Lauki Kofta variation, use grated bottle gourd instead of potatoes.</li>
+            <li>For Nargisi Kofta, stuff with boiled eggs instead of nuts.</li>
+            <li>Kasuri methi is essential for authentic dhaba-style flavor.</li>
+            <li>Store extra koftas in freezer for up to a month (fry fresh when needed).</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YQCT2K1sNike" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

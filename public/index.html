@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="">
+        <h1>बनाओ और खाओ</h1>
+        <div class="divider1">
+            <p>Follow us on</p>
+        </div>
+
+        <div class="follow-btn">
+            <button class="btn-follow">
+                <a href="https://www.instagram.com/realmadrid/" target="_blank" style="text-decoration: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="18" height="18"><defs><linearGradient id="instagramGradient" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#FD5949;stop-opacity:1" /><stop offset="25%" style="stop-color:#D6249F;stop-opacity:1" /><stop offset="50%" style="stop-color:#285AEB;stop-opacity:1" /></linearGradient></defs><rect x="4" y="4" width="40" height="40" rx="12" fill="url(#instagramGradient)"/><rect x="10" y="10" width="28" height="28" rx="6" fill="none" stroke="white" stroke-width="2.5"/><circle cx="24" cy="24" r="7" fill="none" stroke="white" stroke-width="2.5"/><circle cx="33" cy="15" r="2" fill="white"/></svg>
+                    Instagram
+                </a>
+            </button>
+
+            <a href="https://www.facebook.com/RealMadrid" target="_blank" style="text-decoration: none;">
+                <button class="btn-follow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="18" height="18"><circle cx="24" cy="24" r="20" fill="#1877F2"/><path d="M 28 15 L 28 19 L 25 19 Q 24 19 24 20 L 24 23 L 28 23 L 27.5 27 L 24 27 L 24 38 L 20 38 L 20 27 L 17 27 L 17 23 L 20 23 L 20 19.5 Q 20 17 21.5 15.5 Q 23 14 25.5 14 L 28 14 Z" fill="white"/></svg>
+                    Facebook
+                </button>
+            </a>
+
+            <a href="https://www.youtube.com/@realmadrid" target="_blank" style="text-decoration: none;">
+                <button class="btn-follow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24"><defs><linearGradient id="rmYT" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#00529F"/><stop offset="100%" style="stop-color:#EE324E"/></linearGradient></defs><rect x="4" y="12" width="40" height="24" rx="5" fill="url(#rmYT)"/><path d="M 18 17 L 18 31 L 32 24 Z" fill="white"/><rect x="6" y="13" width="36" height="3" rx="4" fill="white" opacity="0.2"/></svg>
+                    YouTube
+                </button>
+            </a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="main1">
+            <div class="main2">
+                <div class="main3">
+                    <div class="slider">
+                        <img src="briyani.png" alt="">
+                        <img src="dal.png" alt="">
+                        <img src="chicken.png" alt="">
+                        <img src="chole.png">
+                        <img src="briyani.png" alt="">
+                        <img src="dal.png" alt="">
+                        <img src="chicken.png" alt="">
+                        <img src="chole.png">
+                    </div> 
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="head">
+                    <h1>Create account</h1>
+                    <p>Join us today and get started</p>
+                    <div class="ucl">
+                        <img src="https://assets.realmadrid.com/is/image/realmadrid/CABECERA_PARCHE_15_nuevo?$Mobile$&fit=wrap" alt="" height="70px">
+                    </div>
+                </div>
+
+                <form id="signupForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="siuuu@gmail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Create Account</button>
+                </form>
+
+                <div class="divider">or continue with</div>
+
+                <div class="social-button">
+                    <button class="btn-social" id="googleSignInBtn">
+                        <svg width="18" height="18" viewBox="0 0 18 18">
+                            <path fill="#4285F4" d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.875 2.684-6.615z"/>
+                            <path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.184l-2.908-2.258c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/>
+                            <path fill="#FBBC05" d="M3.964 10.707c-.18-.54-.282-1.117-.282-1.707s.102-1.167.282-1.707V4.961H.957C.347 6.175 0 7.55 0 9s.348 2.825.957 4.039l3.007-2.332z"/>
+                            <path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.961L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"/>
+                        </svg>
+                        Google
+                    </button>
+
+                    <button class="btn-social">
+                        <svg width="18" height="18" viewBox="0 0 16 16" fill="#181717">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        GitHub
+                    </button>
+                </div>
+
+                <div class="footer-text">
+                    Already have an account? <a href="index.html">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 1. Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBcR5_tQe8wInzcWgbHeOUZJ-4BIJI5ZiI",
+            authDomain: "khaoo-4e311.firebaseapp.com",
+            projectId: "khaoo-4e311",
+            storageBucket: "khaoo-4e311.firebasestorage.app",
+            messagingSenderId: "518317776020",
+            appId: "1:518317776020:web:0e2b297144f45b5def6881",
+            measurementId: "G-B8E9TGQXWL"
+        };
+
+        // 2. INITIALIZE FIREBASE (Compat style)
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+
+        // 3. MANUAL SIGN UP LOGIC (Email/Password)
+        const signupForm = document.getElementById('signupForm');
+        
+        signupForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Stop page from reloading
+
+            // Get values from your HTML inputs
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Create User in Firebase
+            auth.createUserWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    
+                    // Optional: Save their Name to their profile
+                    user.updateProfile({
+                        displayName: firstName + " " + lastName
+                    }).then(() => {
+                        console.log("Profile updated");
+                        // Redirect to Main Page
+                        window.location.href = "main.html"; 
+                    });
+                })
+                .catch((error) => {
+                    alert("Error signing up: " + error.message);
+                });
+        });
+
+        // 4. GOOGLE SIGN IN LOGIC
+        const googleBtn = document.getElementById('googleSignInBtn');
+
+        googleBtn.addEventListener('click', (e) => {
+            e.preventDefault(); 
+            
+            // Note: In compat mode, it's firebase.auth.GoogleAuthProvider
+            const provider = new firebase.auth.GoogleAuthProvider();
+
+            auth.signInWithPopup(provider)
+                .then((result) => {
+                    console.log("Google User:", result.user);
+                    window.location.href = "main.html"; 
+                })
+                .catch((error) => {
+                    alert("Google Error: " + error.message);
+                });
+        });
+
+        // 5. SECURITY CHECK (Auto-redirect if already logged in)
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                // If user is found, redirect to MAIN.html
+                // Your previous code had "index.html" here, which traps them in a loop!
+                window.location.href = "main.html";
+            }
+        });
+    </script>
+</body>
+</html>

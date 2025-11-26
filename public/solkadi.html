@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solkadi Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #ffe4f0;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffb3d9, #ffe4f0);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #d81b60;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #d81b60;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ad1457;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #ffd1e3;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #d81b60;
+        }
+
+        .info-card h3 {
+            color: #d81b60;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #d81b60;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #d81b60;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #d81b60;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Solkadi</h1>
+            <p>The refreshing coastal drink from Konkan — a beautiful pink digestive made with coconut milk and kokum. Light, tangy, and cooling, it's the perfect accompaniment to spicy seafood and coastal cuisine!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="sol-kadhi.png" alt="Refreshing Solkadi">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>10 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>5 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>Main Ingredients:</h3>
+        <ul>
+            <li>8-10 pieces dried kokum (amsul)</li>
+            <li>1 cup thick coconut milk (fresh or canned)</li>
+            <li>1 cup water</li>
+            <li>4-6 garlic cloves, crushed</li>
+            <li>2-3 green chilies, finely chopped</li>
+            <li>Salt to taste</li>
+            <li>1/2 tsp cumin powder (optional)</li>
+        </ul>
+
+        <h3>For Garnish:</h3>
+        <ul>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>A pinch of roasted cumin powder</li>
+        </ul>
+
+        <h3>For Serving:</h3>
+        <ul>
+            <li>Ice cubes (optional, for chilled version)</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Soak the Kokum:</strong>
+                <ul>
+                    <li>Rinse the dried kokum pieces under water to remove any dirt.</li>
+                    <li>Soak them in 1 cup of warm water for 15-20 minutes.</li>
+                    <li>Once softened, squeeze the kokum pieces to extract all the juice and color.</li>
+                    <li>Strain and keep the pink kokum water aside. Discard the kokum pieces.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Coconut Milk:</strong>
+                <ul>
+                    <li>If using fresh coconut, blend grated coconut with water and strain to get thick coconut milk.</li>
+                    <li>If using canned coconut milk, shake well before using.</li>
+                    <li>Keep the coconut milk at room temperature.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Mix the Solkadi:</strong>
+                <ul>
+                    <li>In a large bowl or jug, add the extracted kokum water.</li>
+                    <li>Add the coconut milk and mix well until combined.</li>
+                    <li>Add crushed garlic cloves and finely chopped green chilies.</li>
+                    <li>Add salt to taste and cumin powder if using.</li>
+                    <li>Mix everything together thoroughly.</li>
+                    <li>The solkadi should have a beautiful pink color and smooth consistency.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Pour the solkadi into glasses.</li>
+                    <li>Garnish with freshly chopped coriander leaves.</li>
+                    <li>Sprinkle a pinch of roasted cumin powder on top.</li>
+                    <li>Serve at room temperature or chilled with ice cubes.</li>
+                    <li>Enjoy with spicy fish curry, chicken curry, or any coastal meal!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Tips & Variations 🥥</h2>
+        <ul>
+            <li>Kokum is the star ingredient - it gives solkadi its signature pink color and tangy flavor.</li>
+            <li>Don't boil the solkadi - it's meant to be served raw for maximum cooling effect.</li>
+            <li>Adjust garlic and green chilies according to your preference.</li>
+            <li>For thicker solkadi, use more coconut milk; for lighter version, add more water.</li>
+            <li>Fresh coconut milk gives the best flavor, but canned works great too.</li>
+            <li>Solkadi is a natural digestive and cooling agent - perfect after spicy meals.</li>
+            <li>Some regions add a pinch of asafoetida (hing) for additional flavor.</li>
+            <li>Try adding a small piece of ginger along with garlic for extra zing.</li>
+            <li>Store leftover solkadi in the refrigerator for up to 2 days.</li>
+            <li>Best enjoyed fresh - the flavors are most vibrant when freshly made!</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zQc8vJGZ3Uc" title="Solkadi Recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

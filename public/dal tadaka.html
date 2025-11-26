@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal Tadka Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f0f8f0;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #c8e6c9, #f0f8f0);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #388e3c;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #e8f5e9;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #2e7d32;
+        }
+
+        .info-card h3 {
+            color: #2e7d32;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #2e7d32;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Dal Tadka</h1>
+            <p>The ultimate Indian comfort food — creamy, protein-rich lentils tempered with a sizzling blend of aromatic spices, garlic, and ghee. Simple yet soul-satisfying!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="dal-tadaka.png" alt="Delicious Dal Tadka">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>10 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>30 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Dal:</h3>
+        <ul>
+            <li>1 cup toor dal (yellow pigeon peas)</li>
+            <li>¼ cup masoor dal (red lentils) - optional for creamier texture</li>
+            <li>3 cups water</li>
+            <li>½ tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>1 tsp oil or ghee</li>
+        </ul>
+
+        <h3>For the Masala Base:</h3>
+        <ul>
+            <li>2 large tomatoes, finely chopped</li>
+            <li>1 large onion, finely chopped</li>
+            <li>2 green chilies, slit</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>½ tsp red chili powder</li>
+            <li>½ tsp coriander powder</li>
+            <li>¼ tsp garam masala</li>
+            <li>1 tsp kasuri methi (dried fenugreek leaves)</li>
+            <li>2 tbsp oil or ghee</li>
+        </ul>
+
+        <h3>For the Tadka (Tempering):</h3>
+        <ul>
+            <li>3 tbsp ghee or butter</li>
+            <li>1 tsp cumin seeds</li>
+            <li>½ tsp mustard seeds</li>
+            <li>A pinch of hing (asafoetida)</li>
+            <li>6-8 garlic cloves, finely chopped</li>
+            <li>2-3 dried red chilies, broken</li>
+            <li>8-10 curry leaves</li>
+            <li>1 tsp kasuri methi</li>
+        </ul>
+
+        <h3>For Garnish:</h3>
+        <ul>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>1 tbsp fresh cream (optional)</li>
+            <li>Lemon wedges</li>
+            <li>Ginger julienne</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Wash and Soak the Dal:</strong>
+                <ul>
+                    <li>Rinse toor dal and masoor dal together 2-3 times until water runs clear.</li>
+                    <li>Soak in water for 20-30 minutes (optional but reduces cooking time).</li>
+                    <li>Drain the water before cooking.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Cook the Dal (Choose Your Method):</strong>
+                <ul>
+                    <li><strong>Pressure Cooker Method:</strong> Add dal, 3 cups water, turmeric, salt, and 1 tsp oil. Pressure cook for 3-4 whistles on medium heat. Let pressure release naturally.</li>
+                    <li><strong>Stovetop Method:</strong> In a pot, add dal, 4 cups water, turmeric, and salt. Bring to boil, then simmer for 30-40 minutes until dal is soft and mushy. Stir occasionally.</li>
+                    <li><strong>Instant Pot Method:</strong> Add dal, water, turmeric, and salt. Cook on high pressure for 10 minutes, then natural release for 10 minutes.</li>
+                    <li>Mash the dal slightly with a spoon for creamy consistency.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Masala Base:</strong>
+                <ul>
+                    <li>Heat 2 tbsp oil or ghee in a pan.</li>
+                    <li>Add chopped onions and sauté until golden brown.</li>
+                    <li>Add ginger-garlic paste and green chilies, cook for 1-2 minutes.</li>
+                    <li>Add chopped tomatoes and cook until soft and mushy (5-7 minutes).</li>
+                    <li>The tomatoes should break down completely.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add Spices:</strong>
+                <ul>
+                    <li>Add red chili powder, coriander powder, and salt to the tomato-onion mixture.</li>
+                    <li>Cook the spices for 1-2 minutes until oil separates.</li>
+                    <li>Crush kasuri methi between your palms and add.</li>
+                    <li>Mix well and cook for another minute.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Combine Dal with Masala:</strong>
+                <ul>
+                    <li>Add the cooked dal to the masala mixture.</li>
+                    <li>Mix everything well and bring to a boil.</li>
+                    <li>Add water if needed to adjust consistency (it should be slightly thin).</li>
+                    <li>Simmer for 5-7 minutes on low heat for flavors to blend.</li>
+                    <li>Add garam masala and mix.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Tadka (The Star Step!):</strong>
+                <ul>
+                    <li>Heat 3 tbsp ghee in a small tadka pan until smoking hot.</li>
+                    <li>Add cumin seeds and mustard seeds, let them crackle.</li>
+                    <li>Add a pinch of hing (asafoetida).</li>
+                    <li>Add chopped garlic and sauté until golden brown.</li>
+                    <li>Add dried red chilies and curry leaves (be careful, they splutter!).</li>
+                    <li>Crush kasuri methi and add to the tadka.</li>
+                    <li>The tadka should be aromatic and sizzling.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Finish and Serve:</strong>
+                <ul>
+                    <li>Pour the hot, sizzling tadka over the dal.</li>
+                    <li>You'll hear the amazing sizzle — that's the magic moment!</li>
+                    <li>Mix gently or serve with tadka on top for presentation.</li>
+                    <li>Garnish with fresh coriander, ginger julienne, and a swirl of cream.</li>
+                    <li>Serve hot with steamed rice, roti, naan, or jeera rice!</li>
+                    <li>Don't forget lemon wedges on the side for that tangy kick!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🥣</h2>
+        <ul>
+            <li>For creamier dal, add ¼ cup masoor dal or moong dal to the toor dal.</li>
+            <li>The tadka is what makes this dish special — use generous amounts of ghee!</li>
+            <li>Don't skip the garlic in tadka — it adds incredible flavor.</li>
+            <li>Kasuri methi (dried fenugreek) is essential for authentic dhaba-style taste.</li>
+            <li>The dal should be slightly thin as it thickens upon cooling.</li>
+            <li>For restaurant-style dal, add 1-2 tbsp butter at the end.</li>
+            <li>Add a squeeze of lemon juice just before serving for brightness.</li>
+            <li>For Dal Fry variation, reduce water for thicker consistency.</li>
+            <li>For Tadka Dal, the tadka is poured on top; for Dal Tadka, tadka is mixed in.</li>
+            <li>You can make this in bulk — it tastes even better the next day!</li>
+            <li>Add a pinch of sugar to balance the tanginess of tomatoes.</li>
+            <li>Store in refrigerator for up to 3 days or freeze for up to a month.</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YQCT2K1sNike" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

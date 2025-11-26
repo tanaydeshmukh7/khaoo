@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App - Main</title>
+    <link rel="stylesheet" href="non-veg.css.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo border"></div>
+            </div>
+
+            <div class="nav-input">
+                <div class="dropdown">
+                    <button>Select ⇓</button>
+                    <ul>
+                        <li><a href="index.html">Non-Veg</a></li>
+                        <li><a href="veg.html">Veg</a></li>
+                        <li><a href="snakes.html">Snacks</a></li>
+                        <li><a href="drinks.html">Drinks</a></li>
+                    </ul>
+                </div>
+                <input class="search-nav border" type="text" placeholder="Search Recipe">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+
+            <div class="lang border">
+                <p>🇮🇳</p>
+                <select class="lang-select"><option>HIN</option></select>
+            </div>
+
+            <div class="nav-sign border">
+                <span id="user-name">Loading...</span>
+                <p class="nav-sec">Account & list</p>
+            </div>
+
+            <div class="log-out border" id="btn-logout" style="cursor: pointer; position: relative; z-index: 1000; background-color: #ffe6e6;">
+                <h1 style="pointer-events: none;">Log Out</h1> 
+            </div>
+
+        </div>
+    </header>
+    
+    <div class="hero-sec">
+        <div class="txt">
+            <div class="txt-left">
+                <h1>Cook at Home</h1>
+                <p>Bring the joy of cooking to your kitchen.</p>
+            </div>
+        </div>
+    </div>
+
+   <div class="content">
+        <a href="briyani.html">
+            <div class="box1">
+                <div class="info">
+                    <h1>Chicken Biryani</h1>
+                    <span class="tag">Spicy</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="butter chicken.html">
+    <div class="box2">
+        <div class="info">
+            <h1>Butter Chicken</h1>
+            <p>Creamy tomato-based curry with tender chicken in rich buttery sause</p>
+            <span class="tag">Creamy</span>
+            <span class="tag"> Mild</span>
+        </div>
+    </div>
+</a>
+
+<a href="ghee rost.html">
+    <div class="box3">
+        <div class="info">
+             <h1>Chicken Ghee Rost</h1>
+            <p>succulent chicken pieces cooked in aromatic ghee with traditional spices</p>
+            <span class="tag">Rih</span>
+            <span class="tag">Flavorful</span>
+        </div>
+    </div>
+</a>
+
+<a href="masala chicken.html">
+    <div class="box4">
+        <div class="info">
+            <h1>Masala Chicken</h1>
+            <p>Tender chicken marinated in a blend of blod Indian spices and herbs</p>
+            <span class="tag">Spicy</span>
+            <span class="tag"> Aromatic</span>
+        </div>
+    </div>
+</a>
+
+<a href="chicken 65.html">
+    <div class="box5">
+        <div class="info">
+            <h1>Chicken 65</h1>
+            <p>Crispy fired chicken tossed with curry leaves and special spice mix</p>
+            <span class="tag">Crispy</span>
+            <span class="tag">Hot</span>
+        </div>
+    </div>
+</a>
+
+<a href="chicken tikka.html">
+    <div class="box6">
+        <div class="info">
+            <h1>Chicken Tikka</h1>
+            <p>Grilled chicken chunks marinated in yogurt and aromatic tandoori spices</p>
+            <span class="tag">Grilled</span>
+            <span class="tag">Smoky</span>
+        </div>
+    </div>
+</a>
+   
+    
+   </div>
+        </div>
+
+   <script>
+        console.log("App starting...");
+
+        // 1. CONFIGURATION
+        const firebaseConfig = {
+            apiKey: "AIzaSyBcR5_tQe8wInzcWgbHeOUZJ-4BIJI5ZiI",
+            authDomain: "khaoo-4e311.firebaseapp.com",
+            projectId: "khaoo-4e311",
+            storageBucket: "khaoo-4e311.firebasestorage.app",
+            messagingSenderId: "518317776020",
+            appId: "1:518317776020:web:0e2b297144f45b5def6881"
+        };
+
+        // 2. INITIALIZE
+        try {
+            firebase.initializeApp(firebaseConfig);
+            const auth = firebase.auth();
+            console.log("Firebase Active");
+
+            // 3. CHECK LOGIN
+            auth.onAuthStateChanged((user) => {
+                if (user) {
+                    console.log("User logged in: " + user.email);
+                    document.getElementById('user-name').innerText = "Hi, " + (user.displayName || "Chef");
+                } else {
+                    console.log("No user found, redirecting to login...");
+                    // IMPORTANT: Ensure your login page is named index.html
+                    window.location.href = "index.html"; 
+                }
+            });
+
+            // 4. LOGOUT LOGIC
+            const btn = document.getElementById('btn-logout');
+            
+            // Debugging check
+            if(!btn) {
+                alert("ERROR: Logout button not found in HTML");
+            } else {
+                btn.addEventListener('click', () => {
+                    console.log("Logout clicked");
+                    auth.signOut().then(() => {
+                        alert("Logged out!");
+                        // Redirect happens automatically by onAuthStateChanged
+                    }).catch(e => alert("Error: " + e.message));
+                });
+            }
+
+        } catch (error) {
+            alert("Firebase Error: " + error.message);
+        }
+    </script>
+
+</body>
+</html>

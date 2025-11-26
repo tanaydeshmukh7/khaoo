@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kachori Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8e1;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffe082, #fff8e1);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #ff6f00;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #ff6f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e65100;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff3e0;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #ff6f00;
+        }
+
+        .info-card h3 {
+            color: #ff6f00;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #ff6f00;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #ff6f00;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #ff6f00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Kachori</h1>
+            <p>The ultimate North Indian street food — crispy, flaky pastries stuffed with spiced lentils or peas. Served with tangy tamarind chutney and fluffy aloo sabzi. A breakfast favorite that's absolutely irresistible!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="kachorie.png" alt="Delicious Kachori">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>30 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>25 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>6 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Medium</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Dough:</h3>
+        <ul>
+            <li>2 cups all-purpose flour (maida)</li>
+            <li>4 tbsp oil or ghee</li>
+            <li>1/4 tsp salt</li>
+            <li>Water (as needed for kneading)</li>
+        </ul>
+
+        <h3>For the Dal Filling (Moong Dal):</h3>
+        <ul>
+            <li>1 cup yellow moong dal (split yellow lentils), soaked for 3-4 hours</li>
+            <li>2 tbsp oil</li>
+            <li>1/2 tsp cumin seeds</li>
+            <li>1/2 tsp fennel seeds (saunf)</li>
+            <li>A pinch of asafoetida (hing)</li>
+            <li>1 tsp ginger paste</li>
+            <li>2 green chilies, finely chopped</li>
+            <li>1 tsp coriander powder</li>
+            <li>1/2 tsp red chili powder</li>
+            <li>1/2 tsp garam masala</li>
+            <li>1/2 tsp amchur (dry mango powder)</li>
+            <li>Salt to taste</li>
+            <li>2 tbsp chopped coriander leaves</li>
+        </ul>
+
+        <h3>For Frying:</h3>
+        <ul>
+            <li>Oil for deep frying</li>
+        </ul>
+
+        <h3>For Serving:</h3>
+        <ul>
+            <li>Tamarind chutney</li>
+            <li>Green chutney</li>
+            <li>Aloo sabzi (potato curry)</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Dough:</strong>
+                <ul>
+                    <li>In a large bowl, mix flour and salt.</li>
+                    <li>Add oil or ghee and rub it into the flour until it resembles breadcrumbs.</li>
+                    <li>Gradually add water and knead into a stiff, smooth dough.</li>
+                    <li>Cover with a damp cloth and rest for 20 minutes.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Filling:</strong>
+                <ul>
+                    <li>Drain the soaked moong dal completely and pat dry. Grind it coarsely (not into a paste).</li>
+                    <li>Heat oil in a pan and add cumin seeds, fennel seeds, and asafoetida.</li>
+                    <li>When they crackle, add ginger paste and green chilies. Sauté for 30 seconds.</li>
+                    <li>Add the coarsely ground dal and cook on medium heat for 5-7 minutes, stirring continuously.</li>
+                    <li>Add coriander powder, red chili powder, garam masala, amchur, and salt.</li>
+                    <li>Mix well and cook for another 2-3 minutes until the mixture is dry and aromatic.</li>
+                    <li>Add chopped coriander leaves, mix, and let the filling cool completely.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Shape the Kachoris:</strong>
+                <ul>
+                    <li>Divide the dough into equal portions (golf ball size).</li>
+                    <li>Roll each portion into a small circle, about 3-4 inches in diameter.</li>
+                    <li>Place 1-2 tablespoons of filling in the center.</li>
+                    <li>Bring the edges together and seal tightly, removing any air pockets.</li>
+                    <li>Gently flatten the stuffed ball with your palm.</li>
+                    <li>Very carefully roll it into a disc about 4-5 inches in diameter (don't roll too thin or the filling will break through).</li>
+                    <li>Repeat with remaining dough and filling.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Fry the Kachoris:</strong>
+                <ul>
+                    <li>Heat oil in a deep frying pan on medium heat (not too hot).</li>
+                    <li>Gently slide in one kachori at a time.</li>
+                    <li>Fry on low to medium flame. Press gently with a slotted spoon to help it puff up.</li>
+                    <li>Once it puffs up, flip and fry the other side until golden brown.</li>
+                    <li>Remove and drain on paper towels.</li>
+                    <li>Serve hot with tamarind chutney, green chutney, and aloo sabzi!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Tips & Variations 🥟</h2>
+        <ul>
+            <li>The key to puffed kachoris is the right oil temperature - medium heat works best.</li>
+            <li>Make sure the filling is completely dry and not watery, or kachoris won't puff.</li>
+            <li>Don't roll the stuffed kachori too thin, or it will break.</li>
+            <li>Seal the edges properly to prevent filling from coming out during frying.</li>
+            <li>Press gently while frying to help them puff up beautifully.</li>
+            <li>Try matar kachori: Use spiced green peas filling instead of dal.</li>
+            <li>Try pyaaz kachori: Use spiced onion filling for Rajasthani style.</li>
+            <li>Kachoris can be frozen before frying and fried directly from frozen when needed.</li>
+            <li>Best enjoyed fresh and hot with a hot cup of masala chai!</li>
+        </ul>
+
+        <div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K9R7KcaettM?si=1Z8rujXM9_ORlZwL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

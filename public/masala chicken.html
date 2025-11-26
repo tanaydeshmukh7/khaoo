@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masala Chicken Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8f2;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffd4b8, #fff8f2);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #b8370d;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #b8370d;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #d94515;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff1e6;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #b8370d;
+        }
+
+        .info-card h3 {
+            color: #b8370d;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #b8370d;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #b8370d;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #b8370d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Masala Chicken</h1>
+            <p>A versatile Indian favorite — juicy chicken pieces cooked in a flavorful blend of aromatic spices and onion-tomato gravy, perfect for any occasion.</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="masala-chicken.png" alt="Delicious Masala Chicken">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>15 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>35 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Chicken:</h3>
+        <ul>
+            <li>500g chicken (cut into medium pieces)</li>
+            <li>½ tsp turmeric powder</li>
+            <li>1 tsp red chili powder</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>For the Masala:</h3>
+        <ul>
+            <li>3 tbsp oil or ghee</li>
+            <li>2 large onions, finely chopped</li>
+            <li>3 medium tomatoes, finely chopped or pureed</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>2-3 green chilies, slit</li>
+            <li>1 tsp cumin seeds</li>
+            <li>1 bay leaf</li>
+            <li>2-3 cloves</li>
+            <li>2 green cardamoms</li>
+            <li>1 inch cinnamon stick</li>
+        </ul>
+
+        <h3>Spice Powders:</h3>
+        <ul>
+            <li>1 tsp coriander powder</li>
+            <li>½ tsp cumin powder</li>
+            <li>1 tsp red chili powder</li>
+            <li>½ tsp turmeric powder</li>
+            <li>1 tsp garam masala</li>
+            <li>½ tsp black pepper powder</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>For Garnish:</h3>
+        <ul>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>1 tsp kasuri methi (dried fenugreek leaves)</li>
+            <li>Lemon wedges</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Marinate the Chicken:</strong>
+                <ul>
+                    <li>Wash and clean the chicken pieces thoroughly.</li>
+                    <li>Mix chicken with turmeric powder, red chili powder, and salt.</li>
+                    <li>Let it marinate for 10-15 minutes while you prepare other ingredients.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Base:</strong>
+                <ul>
+                    <li>Heat oil or ghee in a heavy-bottomed pan or pressure cooker.</li>
+                    <li>Add cumin seeds, bay leaf, cloves, cardamoms, and cinnamon stick.</li>
+                    <li>Let them splutter and release their aroma (30 seconds).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Sauté Onions:</strong>
+                <ul>
+                    <li>Add finely chopped onions and sauté on medium heat until golden brown (8-10 minutes).</li>
+                    <li>Don't rush this step — well-browned onions add depth to the gravy.</li>
+                    <li>Add ginger-garlic paste and green chilies, cook for 2 minutes.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add Tomatoes & Spices:</strong>
+                <ul>
+                    <li>Add chopped tomatoes and cook until they turn soft and mushy (5-7 minutes).</li>
+                    <li>Add coriander powder, cumin powder, red chili powder, turmeric, and salt.</li>
+                    <li>Cook the masala until oil separates from the mixture (3-4 minutes).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Cook the Chicken:</strong>
+                <ul>
+                    <li>Add the marinated chicken pieces and mix well with the masala.</li>
+                    <li>Cook on high heat for 5 minutes, stirring occasionally.</li>
+                    <li>Add ½ cup water (adjust for desired gravy consistency).</li>
+                    <li>Cover and cook on medium-low heat for 15-20 minutes until chicken is tender.</li>
+                    <li>If using a pressure cooker, cook for 2 whistles and simmer for 5 minutes.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Final Touches:</strong>
+                <ul>
+                    <li>Once chicken is cooked, add garam masala and black pepper powder.</li>
+                    <li>Crush kasuri methi between your palms and sprinkle over the curry.</li>
+                    <li>Mix well and cook for another 2-3 minutes.</li>
+                    <li>Check seasoning and adjust salt if needed.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Garnish with fresh coriander leaves.</li>
+                    <li>Serve hot with roti, naan, paratha, or steamed rice.</li>
+                    <li>Add a squeeze of lemon juice for extra zing!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🍽️</h2>
+        <ul>
+            <li>For a restaurant-style curry, blend the onion-tomato mixture after cooking for a smooth gravy.</li>
+            <li>Add yogurt or cream for a richer, milder version.</li>
+            <li>Include bell peppers and potatoes for a hearty one-pot meal.</li>
+            <li>For extra heat, add more green chilies or red chili powder.</li>
+            <li>Use bone-in chicken for more flavor, or boneless for quicker cooking.</li>
+            <li>This masala base works great for paneer, fish, or vegetables too!</li>
+            <li>Leftovers taste even better as the spices blend overnight.</li>
+            <li>For a South Indian twist, add curry leaves and coconut milk.</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FKpCeD_XWCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

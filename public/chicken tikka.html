@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Tikka Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8f2;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffddc7, #fff8f2);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #c84a1f;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #c84a1f;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e55a2a;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff1e6;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #c84a1f;
+        }
+
+        .info-card h3 {
+            color: #c84a1f;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #c84a1f;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #c84a1f;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #c84a1f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Chicken Tikka</h1>
+            <p>The timeless tandoori classic — succulent chunks of chicken marinated in yogurt and spices, grilled to perfection with smoky, charred edges.</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="chicken-tikka.png" alt="Delicious Chicken Tikka">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>15 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>20 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the First Marinade:</h3>
+        <ul>
+            <li>500g boneless chicken (cut into 2-inch cubes)</li>
+            <li>2 tbsp lemon juice</li>
+            <li>1 tsp red chili powder</li>
+            <li>½ tsp turmeric powder</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>For the Second Marinade:</h3>
+        <ul>
+            <li>1 cup thick yogurt (hung curd preferred)</li>
+            <li>2 tbsp ginger-garlic paste</li>
+            <li>1 tbsp kasuri methi (dried fenugreek leaves)</li>
+            <li>2 tsp red chili powder</li>
+            <li>1 tsp coriander powder</li>
+            <li>1 tsp cumin powder</li>
+            <li>1 tsp garam masala</li>
+            <li>½ tsp black pepper powder</li>
+            <li>2 tbsp mustard oil or vegetable oil</li>
+            <li>1 tbsp gram flour (besan), roasted</li>
+            <li>1 tsp chaat masala</li>
+            <li>Red food color (optional)</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>For Grilling:</h3>
+        <ul>
+            <li>1 large onion, cut into squares</li>
+            <li>1 large bell pepper (capsicum), cut into squares</li>
+            <li>2 tbsp melted butter or ghee (for basting)</li>
+            <li>Wooden or metal skewers</li>
+        </ul>
+
+        <h3>For Garnish:</h3>
+        <ul>
+            <li>Fresh coriander leaves</li>
+            <li>Lemon wedges</li>
+            <li>Onion rings</li>
+            <li>Chaat masala for sprinkling</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>First Marinade:</strong>
+                <ul>
+                    <li>Wash and pat dry the chicken pieces.</li>
+                    <li>Cut into uniform 2-inch cubes for even cooking.</li>
+                    <li>Mix chicken with lemon juice, red chili powder, turmeric, and salt.</li>
+                    <li>Let it sit for 15 minutes. This helps tenderize the meat.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare Second Marinade:</strong>
+                <ul>
+                    <li>In a large bowl, whisk thick yogurt until smooth.</li>
+                    <li>Add ginger-garlic paste, kasuri methi (crush between palms), all spice powders, roasted gram flour, oil, and salt.</li>
+                    <li>If using, add a pinch of red food color for vibrant tandoori color.</li>
+                    <li>Mix everything well to form a thick, smooth marinade.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Marinate the Chicken:</strong>
+                <ul>
+                    <li>Add the first-marinated chicken to the yogurt mixture.</li>
+                    <li>Coat each piece thoroughly with the marinade.</li>
+                    <li>Cover and refrigerate for at least 2 hours (overnight for best results).</li>
+                    <li>The longer it marinates, the more flavorful and tender it becomes.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare for Grilling:</strong>
+                <ul>
+                    <li>If using wooden skewers, soak them in water for 30 minutes to prevent burning.</li>
+                    <li>Thread marinated chicken pieces onto skewers.</li>
+                    <li>Alternate with onion and bell pepper squares for added flavor.</li>
+                    <li>Leave some space between pieces for even cooking.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Grill the Tikka (Choose Your Method):</strong>
+                <ul>
+                    <li><strong>Oven Method:</strong> Preheat oven to 220°C (425°F). Place skewers on a wire rack over a baking tray. Grill for 15-20 minutes, turning halfway and basting with butter.</li>
+                    <li><strong>Stovetop Method:</strong> Heat a grill pan or tawa on high. Cook skewers for 12-15 minutes, turning frequently and basting with butter.</li>
+                    <li><strong>Tandoor/BBQ:</strong> Grill over high heat for 10-12 minutes, turning and basting regularly until charred edges appear.</li>
+                    <li>The chicken should have beautiful char marks and be cooked through.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add Smoky Flavor (Optional):</strong>
+                <ul>
+                    <li>Place grilled tikkas in a bowl.</li>
+                    <li>Make a small foil cup and place a piece of hot charcoal in it.</li>
+                    <li>Place the cup in the bowl with chicken.</li>
+                    <li>Pour ½ tsp ghee over the charcoal and immediately cover the bowl.</li>
+                    <li>Let it smoke for 2-3 minutes, then remove the charcoal.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Arrange tikka pieces on a serving platter.</li>
+                    <li>Sprinkle chaat masala and chopped coriander.</li>
+                    <li>Serve hot with mint chutney, onion rings, and lemon wedges.</li>
+                    <li>Perfect as an appetizer or main course with naan and salad!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🍽️</h2>
+        <ul>
+            <li>Use hung curd (strained yogurt) for a thicker marinade that sticks better to the chicken.</li>
+            <li>Roast the gram flour (besan) before adding to remove raw taste and add nuttiness.</li>
+            <li>Mustard oil gives authentic tandoori flavor, but any oil works fine.</li>
+            <li>For extra tenderness, add 1 tsp raw papaya paste or meat tenderizer to the marinade.</li>
+            <li>Don't skip the double marinade — the first one tenderizes, the second adds flavor.</li>
+            <li>Basting with butter or ghee during grilling is essential for juiciness and flavor.</li>
+            <li>You can make Paneer Tikka using the same marinade with paneer cubes.</li>
+            <li>Leftover tikka makes amazing Chicken Tikka Masala — just add it to a tomato-cream gravy!</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YQCT2K1sNike" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

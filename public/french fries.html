@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Fries Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8e1;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffe082, #fff8e1);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #ff6f00;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #ff6f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e65100;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff3e0;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #ff6f00;
+        }
+
+        .info-card h3 {
+            color: #ff6f00;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #ff6f00;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #ff6f00;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #ff6f00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>French Fries</h1>
+            <p>The ultimate comfort food — perfectly golden, crispy on the outside, fluffy on the inside. Learn the secret to making restaurant-quality fries at home. Pure crispy perfection!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="french-fries.png" alt="Delicious French Fries">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>15 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>20 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>Main Ingredients:</h3>
+        <ul>
+            <li>4 large russet potatoes (or any starchy potato)</li>
+            <li>Oil for deep frying (vegetable, canola, or peanut oil)</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>Optional Seasonings:</h3>
+        <ul>
+            <li>Black pepper powder</li>
+            <li>Garlic powder</li>
+            <li>Paprika or chili powder</li>
+            <li>Dried herbs (oregano, thyme, or rosemary)</li>
+            <li>Parmesan cheese (for loaded fries)</li>
+        </ul>
+
+        <h3>For Serving:</h3>
+        <ul>
+            <li>Ketchup</li>
+            <li>Mayonnaise</li>
+            <li>Cheese sauce</li>
+            <li>Ranch dressing</li>
+            <li>BBQ sauce</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Potatoes:</strong>
+                <ul>
+                    <li>Peel the potatoes (optional - you can keep the skin for rustic fries).</li>
+                    <li>Cut potatoes into even sticks about 1/4 to 1/2 inch thick.</li>
+                    <li>Place cut potatoes in a large bowl of cold water and let them soak for at least 30 minutes (or up to 2 hours).</li>
+                    <li>This removes excess starch and helps achieve crispier fries.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Dry the Potatoes:</strong>
+                <ul>
+                    <li>Drain the water completely.</li>
+                    <li>Pat the potato sticks thoroughly dry with paper towels or a clean kitchen towel.</li>
+                    <li>Make sure they are completely dry before frying to avoid oil splattering.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>First Fry (Blanching):</strong>
+                <ul>
+                    <li>Heat oil in a deep pot or fryer to 325°F (160°C).</li>
+                    <li>Carefully add potatoes in small batches, don't overcrowd the pot.</li>
+                    <li>Fry for 5-7 minutes until potatoes are cooked through but still pale (not golden).</li>
+                    <li>Remove with a slotted spoon and drain on paper towels.</li>
+                    <li>Let them cool for at least 10 minutes (or refrigerate for up to 2 hours).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Second Fry (Crisping):</strong>
+                <ul>
+                    <li>Heat the oil to 375°F (190°C) for the second fry.</li>
+                    <li>Add the blanched fries back in small batches.</li>
+                    <li>Fry for 3-5 minutes until golden brown and crispy.</li>
+                    <li>Remove and drain on fresh paper towels.</li>
+                    <li>Immediately season with salt while they're still hot.</li>
+                    <li>Serve hot with your favorite dipping sauce!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Tips & Variations 🍟</h2>
+        <ul>
+            <li>The double-fry method is the secret to crispy fries - don't skip it!</li>
+            <li>Use starchy potatoes like russet or Idaho for best results.</li>
+            <li>Keep the oil temperature consistent - use a thermometer if possible.</li>
+            <li>Don't overcrowd the pan - fry in small batches for even cooking.</li>
+            <li>For wedges: Cut potatoes into thicker wedges and increase cooking time.</li>
+            <li>For curly fries: Use a spiralizer to create spiral shapes.</li>
+            <li>Try sweet potato fries: Same method works great with sweet potatoes!</li>
+            <li>Make it loaded: Top with cheese, bacon bits, jalapeños, and sour cream.</li>
+            <li>Air fryer option: Toss in oil and air fry at 375°F for 15-20 minutes, shaking halfway.</li>
+            <li>Baked option: Toss in oil, spread on baking sheet, bake at 425°F for 30-40 minutes, flipping once.</li>
+        </ul>
+
+        <div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K9R7KcaettM?si=1Z8rujXM9_ORlZwL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

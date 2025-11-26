@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhokla Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8e1;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffe082, #fff8e1);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #ff6f00;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #ff6f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e65100;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff3e0;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #ff6f00;
+        }
+
+        .info-card h3 {
+            color: #ff6f00;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #ff6f00;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #ff6f00;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #ff6f00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Dhokla</h1>
+            <p>The iconic Gujarati snack — soft, fluffy, and spongy steamed savory cakes made from fermented batter. Light, healthy, and bursting with tangy flavors. A perfect breakfast or evening snack!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="dhokala.png" alt="Delicious Dhokla">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>10 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>20 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Batter:</h3>
+        <ul>
+            <li>1 cup gram flour (besan)</li>
+            <li>1/4 cup semolina (rava/sooji)</li>
+            <li>3/4 cup water (or buttermilk for tangier taste)</li>
+            <li>1 tsp ginger-green chili paste</li>
+            <li>1/2 tsp turmeric powder</li>
+            <li>1 tsp sugar</li>
+            <li>Salt to taste</li>
+            <li>1 tsp lemon juice</li>
+            <li>1 tsp fruit salt (Eno) or baking soda</li>
+        </ul>
+
+        <h3>For Tempering:</h3>
+        <ul>
+            <li>2 tbsp oil</li>
+            <li>1 tsp mustard seeds</li>
+            <li>1 tsp sesame seeds (til)</li>
+            <li>6-8 curry leaves</li>
+            <li>2 green chilies, slit</li>
+            <li>A pinch of asafoetida (hing)</li>
+            <li>2 tbsp water</li>
+        </ul>
+
+        <h3>For Garnish:</h3>
+        <ul>
+            <li>2 tbsp freshly grated coconut</li>
+            <li>2 tbsp chopped coriander leaves</li>
+        </ul>
+
+        <h3>For Serving:</h3>
+        <ul>
+            <li>Green chutney</li>
+            <li>Tamarind chutney</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Steamer:</strong>
+                <ul>
+                    <li>Grease a dhokla plate or any flat-bottomed dish with oil.</li>
+                    <li>Fill a steamer or pressure cooker with water (about 2 inches) and bring it to a boil.</li>
+                    <li>If using a pressure cooker, remove the whistle and rubber gasket.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Make the Batter:</strong>
+                <ul>
+                    <li>In a large bowl, mix gram flour, semolina, turmeric powder, sugar, and salt.</li>
+                    <li>Add ginger-green chili paste.</li>
+                    <li>Gradually add water (or buttermilk) and whisk to make a smooth, lump-free batter.</li>
+                    <li>The batter should be of pouring consistency - not too thick or thin.</li>
+                    <li>Let it rest for 5 minutes.</li>
+                    <li>Add lemon juice and mix well.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add Fruit Salt and Steam:</strong>
+                <ul>
+                    <li>Just before steaming, add fruit salt (Eno) to the batter.</li>
+                    <li>Add 1-2 teaspoons of water over the fruit salt and mix gently in one direction.</li>
+                    <li>The batter will become frothy and airy - don't overmix.</li>
+                    <li>Immediately pour the batter into the greased plate.</li>
+                    <li>Place the plate in the steamer and steam on medium-high heat for 12-15 minutes.</li>
+                    <li>Check with a toothpick - it should come out clean when done.</li>
+                    <li>Turn off heat and let it rest for 2-3 minutes before removing.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare Tempering and Serve:</strong>
+                <ul>
+                    <li>Once dhokla cools slightly, cut into square or diamond shapes.</li>
+                    <li>Heat oil in a small pan for tempering.</li>
+                    <li>Add mustard seeds, sesame seeds, curry leaves, green chilies, and asafoetida.</li>
+                    <li>When mustard seeds crackle, add 2 tablespoons of water (be careful, it will splutter).</li>
+                    <li>Pour this tempering evenly over the dhokla pieces.</li>
+                    <li>Garnish with grated coconut and chopped coriander leaves.</li>
+                    <li>Serve warm with green chutney and tamarind chutney!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Tips & Variations 🌿</h2>
+        <ul>
+            <li>The key to soft dhokla is not overmixing after adding fruit salt - mix gently and steam immediately.</li>
+            <li>For tangier dhokla, use buttermilk or curd instead of water in the batter.</li>
+            <li>Make sure the steamer water is boiling before placing the dhokla plate inside.</li>
+            <li>Don't steam for too long or dhokla will become hard.</li>
+            <li>For traditional fermented dhokla: Soak and grind rice and urad dal, ferment overnight, then steam.</li>
+            <li>Try rava dhokla: Use only semolina instead of besan for a different texture.</li>
+            <li>Try sandwich dhokla: Make two layers with green chutney in between.</li>
+            <li>Add veggies: Mix in grated carrots or finely chopped spinach to the batter.</li>
+            <li>Leftover dhokla can be cut into cubes and used to make dhokla chaat!</li>
+            <li>Best enjoyed fresh and warm - pairs perfectly with masala chai!</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JQtnMRsa8g4" title="Dhokla Recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

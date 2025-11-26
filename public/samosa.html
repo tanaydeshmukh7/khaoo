@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samosa Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8e1;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffe082, #fff8e1);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #ff6f00;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #ff6f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e65100;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff3e0;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #ff6f00;
+        }
+
+        .info-card h3 {
+            color: #ff6f00;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #ff6f00;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #ff6f00;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #ff6f00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Samosa</h1>
+            <p>The beloved Indian snack — crispy, golden triangular pastries filled with spiced potatoes and peas. Perfect for tea time or any celebration. A taste that unites all of India!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="samosa.png" alt="Delicious Samosas">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>30 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>30 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>6 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Medium</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Dough:</h3>
+        <ul>
+            <li>2 cups all-purpose flour (maida)</li>
+            <li>4 tbsp oil or ghee</li>
+            <li>1/2 tsp carom seeds (ajwain)</li>
+            <li>1/2 tsp salt</li>
+            <li>Water (as needed for kneading)</li>
+        </ul>
+
+        <h3>For the Filling:</h3>
+        <ul>
+            <li>4 medium potatoes, boiled and mashed</li>
+            <li>1/2 cup green peas, boiled</li>
+            <li>2 tbsp oil</li>
+            <li>1 tsp cumin seeds</li>
+            <li>1 tsp fennel seeds (saunf)</li>
+            <li>1 tsp ginger, finely chopped</li>
+            <li>2 green chilies, finely chopped</li>
+            <li>1 tsp coriander powder</li>
+            <li>1 tsp garam masala</li>
+            <li>1/2 tsp red chili powder</li>
+            <li>1/2 tsp amchur (dry mango powder)</li>
+            <li>Salt to taste</li>
+            <li>2 tbsp chopped coriander leaves</li>
+        </ul>
+
+        <h3>For Frying:</h3>
+        <ul>
+            <li>Oil for deep frying</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Dough:</strong>
+                <ul>
+                    <li>In a large bowl, mix flour, salt, and carom seeds.</li>
+                    <li>Add oil or ghee and rub it into the flour until it resembles breadcrumbs.</li>
+                    <li>Gradually add water and knead into a firm, smooth dough.</li>
+                    <li>Cover with a damp cloth and rest for 20-30 minutes.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Filling:</strong>
+                <ul>
+                    <li>Heat oil in a pan and add cumin seeds and fennel seeds.</li>
+                    <li>When they crackle, add ginger and green chilies. Sauté for a minute.</li>
+                    <li>Add boiled peas and mash them slightly.</li>
+                    <li>Add coriander powder, garam masala, red chili powder, amchur, and salt.</li>
+                    <li>Mix in mashed potatoes and cook for 2-3 minutes.</li>
+                    <li>Add chopped coriander leaves, mix well, and let the filling cool completely.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Shape the Samosas:</strong>
+                <ul>
+                    <li>Divide the dough into equal portions and roll into balls.</li>
+                    <li>Roll each ball into an oval shape, then cut it in half to make two semicircles.</li>
+                    <li>Take one semicircle and fold it into a cone shape, sealing the edge with water.</li>
+                    <li>Fill the cone with 1-2 tablespoons of the potato filling.</li>
+                    <li>Seal the open edge with water, pressing firmly to close. You can crimp the edges for a decorative look.</li>
+                    <li>Repeat with remaining dough and filling.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Fry the Samosas:</strong>
+                <ul>
+                    <li>Heat oil in a deep frying pan on medium heat.</li>
+                    <li>Gently slide in 3-4 samosas at a time (don't overcrowd).</li>
+                    <li>Fry on low to medium heat until golden brown and crispy (about 12-15 minutes).</li>
+                    <li>Turn occasionally for even cooking.</li>
+                    <li>Remove and drain on paper towels.</li>
+                    <li>Serve hot with mint chutney, tamarind chutney, or tomato ketchup!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Tips & Variations 🌶️</h2>
+        <ul>
+            <li>For extra crispy samosas, add a tablespoon of rice flour to the dough.</li>
+            <li>Always fry on low to medium heat to ensure the samosas cook through without burning.</li>
+            <li>Make sure the filling is completely cool before stuffing to prevent the dough from becoming soggy.</li>
+            <li>Seal the edges properly with water to prevent them from opening while frying.</li>
+            <li>You can make samosas ahead and freeze them unfried. Fry directly from frozen when needed.</li>
+            <li>Try variations with paneer, chicken, or lamb keema filling!</li>
+            <li>Serve with masala chai for the ultimate Indian snack experience!</li>
+        </ul>
+
+        <div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K9R7KcaettM?si=1Z8rujXM9_ORlZwL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

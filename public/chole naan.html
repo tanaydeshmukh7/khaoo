@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chole Naan Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f0f8f0;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #c8e6c9, #f0f8f0);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #388e3c;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #e8f5e9;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #2e7d32;
+        }
+
+        .info-card h3 {
+            color: #2e7d32;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #2e7d32;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Chole Naan</h1>
+            <p>Spicy, tangy chickpea curry (chole) served with soft, fluffy naan bread. A hearty North Indian street food favorite that's perfect for any meal!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="chole-naan.png" alt="Delicious Chole Naan">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>20 mins (+ overnight soaking)</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>60 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Medium</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Chole:</h3>
+        <ul>
+            <li>1 cup dried chickpeas (kabuli chana), soaked overnight</li>
+            <li>2 large onions, finely chopped</li>
+            <li>3 large tomatoes, pureed</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>2-3 green chilies, slit</li>
+            <li>1 black tea bag (or 1 tsp black tea leaves in muslin cloth, for color)</li>
+            <li>2 tbsp oil or ghee</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>For the Chole Masala:</h3>
+        <ul>
+            <li>1 tsp cumin seeds</li>
+            <li>1 bay leaf</li>
+            <li>1-inch cinnamon stick</li>
+            <li>2-3 cloves</li>
+            <li>2 green cardamom pods</li>
+            <li>1 tsp red chili powder</li>
+            <li>1 tsp turmeric powder</li>
+            <li>2 tsp coriander powder</li>
+            <li>1 tsp cumin powder</li>
+            <li>1 tsp garam masala</li>
+            <li>1 tsp amchur (dry mango powder) or 1 tbsp lemon juice</li>
+            <li>½ tsp chole masala (optional, for extra flavor)</li>
+            <li>Fresh coriander leaves for garnish</li>
+            <li>1 onion, sliced into rings (for garnish)</li>
+            <li>Lemon wedges for serving</li>
+        </ul>
+
+        <h3>For the Naan:</h3>
+        <ul>
+            <li>2 cups all-purpose flour (maida)</li>
+            <li>1 tsp active dry yeast</li>
+            <li>1 tsp sugar</li>
+            <li>½ cup warm milk</li>
+            <li>¼ cup plain yogurt</li>
+            <li>2 tbsp melted butter or ghee</li>
+            <li>½ tsp salt</li>
+            <li>1 tsp nigella seeds (kalonji) or sesame seeds (optional)</li>
+            <li>Water as needed for dough</li>
+            <li>Butter for brushing</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Chickpeas:</strong>
+                <ul>
+                    <li>Soak the dried chickpeas in water overnight (or at least 8 hours). They should double in size.</li>
+                    <li>Drain and rinse the chickpeas. Pressure cook with 3 cups water, ½ tsp salt, and the tea bag (or tea leaves in cloth) for 3-4 whistles until soft but not mushy.</li>
+                    <li>Let pressure release naturally. Discard the tea bag. Reserve the cooking water (aquafaba) for gravy.</li>
+                    <li>If using canned chickpeas, drain and rinse, then simmer in water with tea for 10-15 mins for color.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Make the Chole Masala Base:</strong>
+                <ul>
+                    <li>Heat 2 tbsp oil or ghee in a heavy-bottomed pan over medium heat.</li>
+                    <li>Add cumin seeds, bay leaf, cinnamon, cloves, and cardamom. Sauté for 30 seconds until fragrant.</li>
+                    <li>Add chopped onions and green chilies. Cook until onions turn golden brown (8-10 minutes).</li>
+                    <li>Stir in ginger-garlic paste and cook for 1-2 minutes until raw smell disappears.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Cook the Gravy:</strong>
+                <ul>
+                    <li>Add tomato puree, red chili powder, turmeric, coriander powder, cumin powder, and salt.</li>
+                    <li>Cook on medium heat for 5-7 minutes, stirring until the masala thickens and oil separates.</li>
+                    <li>Add the cooked chickpeas along with 1-1½ cups of reserved cooking water (adjust for desired consistency).</li>
+                    <li>Bring to a boil, then simmer covered for 15-20 minutes to let flavors meld.</li>
+                    <li>Add garam masala, amchur (or lemon juice), and chole masala if using. Simmer for another 5 minutes.</li>
+                    <li>Mash a few chickpeas lightly for thicker gravy. Taste and adjust salt/spices.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Naan Dough:</strong>
+                <ul>
+                    <li>In a small bowl, activate yeast: Mix yeast, sugar, and warm milk. Let sit for 5-10 minutes until frothy.</li>
+                    <li>In a large bowl, combine flour and salt. Make a well and add yogurt, melted butter, and yeast mixture.</li>
+                    <li>Knead into a soft, smooth dough (add water 1 tbsp at a time if needed). It should be slightly sticky.</li>
+                    <li>Cover with a damp cloth and let rise in a warm place for 1-2 hours until doubled.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Shape and Cook the Naan:</strong>
+                <ul>
+                    <li>Punch down the dough and divide into 6-8 equal balls.</li>
+                    <li>Roll each ball into an oval or teardrop shape (about ¼ inch thick), leaving slightly thicker edges.</li>
+                    <li>Sprinkle nigella seeds on top and press gently.</li>
+                    <li>Heat a tawa or skillet over high heat. Place naan on it and cook for 1 minute until bubbles form.</li>
+                    <li>Flip and cook the other side for 30 seconds. For char, place directly over medium flame using tongs (if gas stove).</li>
+                    <li>Brush hot naan with butter. Keep covered in a cloth to stay soft.</li>
+                    <li>Repeat for all naans.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Garnish chole with fresh coriander and onion rings.</li>
+                    <li>Serve hot chole with warm naan, lemon wedges, and pickle on the side.</li>
+                    <li>Tear naan and scoop up the spicy chole — enjoy the perfect bite!</li>
+                    <li>Great for breakfast, lunch, or dinner. Pairs well with lassi!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🥘</h2>
+        <ul>
+            <li>Soak chickpeas overnight for best texture; don't skip the tea bag for that authentic dark color.</li>
+            <li>For quicker version, use canned chickpeas but simmer longer for flavor infusion.</li>
+            <li>Brown the onions well — it's key to the rich, deep flavor of Punjabi chole.</li>
+            <li>Add a pinch of baking soda while cooking chickpeas if they are hard (speeds up softening).</li>
+            <li>For garlic naan, add minced garlic to the dough or brush on top before cooking.</li>
+            <li>Vegan option: Use plant-based yogurt and oil instead of butter/ghee.</li>
+            <li>Make ahead: Prepare chole a day in advance; flavors deepen overnight.</li>
+            <li>Don't over-knead naan dough — it should be soft and pliable.</li>
+            <li>For tandoori-style naan at home, use a cast-iron skillet and finish on open flame.</li>
+            <li>Adjust spice levels: Add more chilies for heat or yogurt to the chole for mildness.</li>
+            <li>Store leftover chole in fridge for 3-4 days; reheat with a splash of water.</li>
+            <li>Freeze naan dough balls for up to a month; thaw and cook fresh.</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0oHN7q4pM0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

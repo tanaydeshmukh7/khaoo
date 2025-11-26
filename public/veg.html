@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veg</title>
+    <link rel="stylesheet" href="veg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo border"></div>
+            </div>
+
+            <div class="nav-input">
+                <div class="dropdown">
+                    <button>Select ⇓</button>
+                    <ul>
+                        <li><a href="index.html">Non-Veg</a></li>
+                        <li><a href="veg.html">Veg</a></li>
+                        <li><a href="snakes.html">Snacks</a></li>
+                        <li><a href="drinks.html">Drinks</a></li>
+                    </ul>
+                </div>
+                <input class="search-nav border" type="text" placeholder="Search Recipe">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+
+            <div class="lang border">
+                <p>🇮🇳</p>
+                <select class="lang-select"><option>HIN</option></select>
+            </div>
+
+            <div class="nav-sign border" id="userInfo">
+                <span id="user-name">Hello, User</span>
+                <p class="nav-sec" id="userEmail">Account</p>
+            </div>
+
+            <div class="log-out border" onclick="logoutUser()" style="cursor: pointer; position: relative; z-index: 99999;">
+    <h1>LOG OUT</h1>
+</div>
+        </div>
+    </header>
+    
+    <div class="hero-sec">
+        <div class="txt">
+            <div class="txt-left">
+                <h1>Cook at Home</h1>
+                <pre>Bring the joy of cooking to your kitchen with 
+easy-to-follow Recipe
+mouth-washing dishes, and tips that makes
+meal unforgettable</pre>
+            </div>
+            <div class="txt-right">
+                <pre>Discover thousands of recipes, 
+step-by-step guides, and expert cooking hacks
+From quick weeknight dinners to gourmet meals
+explore a world of flavors and elevate your 
+home cooking experience.
+Your culinary adventure starts here</pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <a href="pulav.html">
+            <div class="box1">
+                <div class="info">
+                    <h1>Veg pulav</h1>
+                    <p>Aromatic basmati rice cooked with fresh vegetables...</p>
+                    <span class="tag">Aromatic</span>
+                    <span class="tag">Healthy</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="panner.html">
+            <div class="box2">
+                <div class="info">
+                    <h1>Paneer Tadka</h1>
+                    <p>Golden paneer cubes in rich Creamy tomato gravy...</p>
+                    <span class="tag">Creamy</span>
+                    <span class="tag">Spicy</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="dal tadaka.html">
+            <div class="box3">
+                <div class="info">
+                    <h1>Dal Tadka</h1>
+                    <p>Creamy yellow lentils tempered with cumin seeds...</p>
+                    <span class="tag">Royal</span>
+                    <span class="tag">Indulgent</span>
+                </div>
+            </div>
+        </a>
+        
+        <a href="kofta.html">
+            <div class="box4">
+                <div class="info">
+                    <h1>Kofta</h1>
+                    <p>Soft paneer and potato dumplings in luxurious creamy gravy...</p>
+                    <span class="tag">Spicy</span>
+                    <span class="tag">Aromatic</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="chole naan.html">
+            <div class="box5">
+                <div class="info">
+                    <h1>Chole Naan</h1>
+                    <p>Spiced chickpea curry served with freshly baked garlic naan...</p>
+                    <span class="tag">Popular</span>
+                    <span class="tag">Hearty</span>
+                </div>
+            </div>
+        </a>
+        
+        <a href="mashroon.html">
+            <div class="box6">
+                <div class="info">
+                    <h1>Mushroom Do Pyaza</h1>
+                    <p>Fresh button mushrooms cooked with double onions...</p>
+                    <span class="tag">Flavorful</span>
+                    <span class="tag">Unique</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        // 1. CONFIGURATION
+        const firebaseConfig = {
+            apiKey: "AIzaSyBcR5_tQe8wInzcWgbHeOUZJ-4BIJI5ZiI",
+            authDomain: "khaoo-4e311.firebaseapp.com",
+            projectId: "khaoo-4e311",
+            storageBucket: "khaoo-4e311.firebasestorage.app",
+            messagingSenderId: "518317776020",
+            appId: "1:518317776020:web:0e2b297144f45b5def6881"
+        };
+
+        // 2. INITIALIZE FIREBASE
+        let auth;
+        try {
+            firebase.initializeApp(firebaseConfig);
+            auth = firebase.auth();
+            console.log("Firebase is running...");
+        } catch (e) {
+            alert("Firebase crashed: " + e.message);
+        }
+
+        // 3. DEFINE THE LOGOUT FUNCTION (GLOBAL)
+        // This is the function your HTML button calls directly
+        window.logoutUser = function() {
+            alert("Button Clicked! Attempting logout..."); // Debug Popup
+            
+            if (auth) {
+                auth.signOut()
+                    .then(() => {
+                        alert("Logout Success!");
+                        window.location.href = "index.html";
+                    })
+                    .catch((error) => {
+                        alert("Error: " + error.message);
+                    });
+            } else {
+                alert("Auth system is not ready yet.");
+            }
+        }
+
+        // 4. CHECK LOGIN STATUS
+        if (auth) {
+            auth.onAuthStateChanged((user) => {
+                if (user) {
+                    console.log("Logged in as: " + user.email);
+                    const nameTag = document.getElementById('user-name');
+                    if (nameTag) nameTag.innerText = "Hello, " + (user.displayName || "User");
+                } else {
+                    console.log("Not logged in.");
+                    window.location.href = "index.html"; 
+                }
+            });
+        }
+    </script>
+</body>
+</html>

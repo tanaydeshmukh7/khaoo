@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneer Tadka Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f0f8f0;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #c8e6c9, #f0f8f0);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #388e3c;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #e8f5e9;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #2e7d32;
+        }
+
+        .info-card h3 {
+            color: #2e7d32;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #2e7d32;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Paneer Tadka</h1>
+            <p>Rich, creamy paneer cubes swimming in a luscious tomato-onion gravy, finished with a sizzling ghee tadka — a restaurant-style delicacy that's irresistibly delicious!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="panner-tadaka.png" alt="Delicious Paneer Tadka">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>15 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>25 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Medium</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Paneer:</h3>
+        <ul>
+            <li>400g paneer (cut into 1-inch cubes)</li>
+            <li>1 tbsp oil (for light frying)</li>
+            <li>Warm water for soaking</li>
+        </ul>
+
+        <h3>For the Gravy:</h3>
+        <ul>
+            <li>3 large tomatoes, roughly chopped</li>
+            <li>2 large onions, roughly chopped</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>2-3 green chilies, slit</li>
+            <li>1 tsp cumin seeds</li>
+            <li>2 bay leaves</li>
+            <li>1-inch cinnamon stick</li>
+            <li>3-4 cloves</li>
+            <li>2-3 green cardamom pods</li>
+        </ul>
+
+        <h3>Spice Powders:</h3>
+        <ul>
+            <li>1 tsp red chili powder</li>
+            <li>½ tsp turmeric powder</li>
+            <li>1 tsp coriander powder</li>
+            <li>1 tsp garam masala</li>
+            <li>1 tsp kasuri methi (dried fenugreek leaves)</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>For the Tadka (Tempering):</h3>
+        <ul>
+            <li>2 tbsp ghee or butter</li>
+            <li>1 tsp cumin seeds</li>
+            <li>4-5 garlic cloves, finely chopped</li>
+            <li>1-2 dried red chilies</li>
+            <li>A pinch of hing (asafoetida)</li>
+            <li>½ tsp kasuri methi</li>
+        </ul>
+
+        <h3>Other Ingredients:</h3>
+        <ul>
+            <li>3 tbsp oil or ghee</li>
+            <li>½ cup fresh cream or malai</li>
+            <li>1 tbsp butter</li>
+            <li>1 tsp sugar (to balance acidity)</li>
+            <li>Fresh coriander leaves for garnish</li>
+            <li>½ cup water (adjust for consistency)</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Paneer:</strong>
+                <ul>
+                    <li>Cut paneer into 1-inch cubes.</li>
+                    <li>Soak in warm water for 10 minutes to keep it soft.</li>
+                    <li>Optionally, lightly fry in 1 tbsp oil until golden (this adds texture).</li>
+                    <li>Set aside the paneer cubes.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Make Tomato-Onion Puree:</strong>
+                <ul>
+                    <li>Heat 1 tbsp oil in a pan.</li>
+                    <li>Add chopped tomatoes and onions.</li>
+                    <li>Cook for 5-7 minutes until soft and mushy.</li>
+                    <li>Let it cool, then blend into a smooth puree.</li>
+                    <li>Strain if you want a silky smooth gravy.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Base:</strong>
+                <ul>
+                    <li>Heat 3 tbsp oil or ghee in a heavy-bottomed pan.</li>
+                    <li>Add cumin seeds and let them splutter.</li>
+                    <li>Add bay leaves, cinnamon, cloves, and cardamom.</li>
+                    <li>Sauté for 30 seconds until aromatic.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Cook the Aromatics:</strong>
+                <ul>
+                    <li>Add ginger-garlic paste and green chilies.</li>
+                    <li>Sauté for 1-2 minutes until the raw smell disappears.</li>
+                    <li>Add red chili powder, turmeric, coriander powder, and salt.</li>
+                    <li>Mix well and cook for 30 seconds.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add the Puree and Simmer:</strong>
+                <ul>
+                    <li>Pour in the tomato-onion puree.</li>
+                    <li>Mix well and cook on medium heat for 8-10 minutes.</li>
+                    <li>Cook until oil starts separating from the sides.</li>
+                    <li>Add sugar to balance the tanginess.</li>
+                    <li>Add water to achieve desired gravy consistency.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add Paneer and Cream:</strong>
+                <ul>
+                    <li>Gently add the paneer cubes to the gravy.</li>
+                    <li>Mix carefully to coat paneer with gravy.</li>
+                    <li>Add fresh cream and butter, mix gently.</li>
+                    <li>Crush kasuri methi between your palms and add.</li>
+                    <li>Sprinkle garam masala on top.</li>
+                    <li>Simmer for 3-4 minutes on low heat.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Tadka:</strong>
+                <ul>
+                    <li>In a small tadka pan, heat 2 tbsp ghee or butter until smoking hot.</li>
+                    <li>Add cumin seeds and let them crackle.</li>
+                    <li>Add chopped garlic and dried red chilies.</li>
+                    <li>Add a pinch of hing and kasuri methi.</li>
+                    <li>Sauté for 10-15 seconds until garlic turns golden.</li>
+                    <li>Immediately pour this sizzling tadka over the paneer gravy.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Give it a gentle stir after adding the tadka.</li>
+                    <li>Garnish with fresh coriander leaves.</li>
+                    <li>Drizzle a little cream on top for presentation.</li>
+                    <li>Serve piping hot with naan, roti, paratha, or jeera rice!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🧈</h2>
+        <ul>
+            <li>For softer paneer, always soak cubes in warm water before adding to gravy.</li>
+            <li>Frying paneer is optional — skip it for a healthier version.</li>
+            <li>Strain the tomato-onion puree for restaurant-style smooth gravy.</li>
+            <li>The tadka is what makes this dish special — don't skip it!</li>
+            <li>Use fresh cream or malai for authentic taste; avoid packaged cream if possible.</li>
+            <li>Kasuri methi adds incredible depth of flavor — crush it well between palms.</li>
+            <li>Add 1 tsp honey instead of sugar for a subtle sweetness.</li>
+            <li>For spicier version, add more green chilies or red chili powder.</li>
+            <li>You can add bell peppers and onion chunks for Paneer Tadka Masala style.</li>
+            <li>Add a few cashew nuts to the puree for extra richness.</li>
+            <li>Store in refrigerator for up to 2 days; tastes even better the next day!</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YQCT2K1sNike" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

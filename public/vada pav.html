@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vada Pav Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8e1;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffe082, #fff8e1);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #ff6f00;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #ff6f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e65100;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff3e0;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #ff6f00;
+        }
+
+        .info-card h3 {
+            color: #ff6f00;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #ff6f00;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #ff6f00;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #ff6f00;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Vada Pav</h1>
+            <p>The iconic Mumbai street food — a spicy potato fritter sandwiched between a soft pav, served with chutneys and fried green chilies. A bite of pure Mumbai magic!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="vada-pav.png" alt="Delicious Vada Pav">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>20 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>25 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Vada (Potato Filling):</h3>
+        <ul>
+            <li>4 medium potatoes, boiled and mashed</li>
+            <li>1 tbsp oil</li>
+            <li>1 tsp mustard seeds</li>
+            <li>1 tsp cumin seeds</li>
+            <li>1 sprig curry leaves</li>
+            <li>2 green chilies, finely chopped</li>
+            <li>1 tsp ginger-garlic paste</li>
+            <li>1/4 tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>2 tbsp chopped coriander leaves</li>
+            <li>Juice of half a lemon</li>
+        </ul>
+
+        <h3>For the Batter:</h3>
+        <ul>
+            <li>1 cup gram flour (besan)</li>
+            <li>1/4 tsp turmeric powder</li>
+            <li>1/2 tsp red chili powder</li>
+            <li>Salt to taste</li>
+            <li>Water (as required to make smooth batter)</li>
+        </ul>
+
+        <h3>For Assembly:</h3>
+        <ul>
+            <li>6 pav buns</li>
+            <li>Dry garlic chutney (optional)</li>
+            <li>Green chutney and tamarind chutney</li>
+            <li>Fried green chilies for serving</li>
+            <li>Oil for deep frying</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Potato Filling:</strong>
+                <ul>
+                    <li>Heat oil in a pan and add mustard seeds, cumin seeds, and curry leaves.</li>
+                    <li>When they crackle, add green chilies and ginger-garlic paste. Sauté for a minute.</li>
+                    <li>Add turmeric and salt, then mix in boiled, mashed potatoes.</li>
+                    <li>Cook for 2–3 minutes, then turn off the flame.</li>
+                    <li>Add coriander leaves and lemon juice. Mix well and let it cool.</li>
+                    <li>Divide into small lemon-sized balls.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Batter:</strong>
+                <ul>
+                    <li>In a bowl, mix besan, turmeric, red chili powder, and salt.</li>
+                    <li>Add water gradually to form a smooth, thick batter (not runny).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Fry the Vadas:</strong>
+                <ul>
+                    <li>Heat oil in a deep frying pan.</li>
+                    <li>Dip each potato ball into the batter, coat it evenly, and gently drop it into hot oil.</li>
+                    <li>Fry on medium flame until golden brown and crisp.</li>
+                    <li>Remove and drain on tissue paper.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Assemble the Vada Pav:</strong>
+                <ul>
+                    <li>Slice the pav horizontally without cutting completely.</li>
+                    <li>Spread green chutney on one side and tamarind chutney on the other.</li>
+                    <li>Sprinkle a bit of dry garlic chutney if desired.</li>
+                    <li>Place one hot vada in between and gently press.</li>
+                    <li>Serve with fried green chili on the side for that authentic Mumbai touch!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Tips & Variations 🌶️</h2>
+        <ul>
+            <li>For extra crispiness, add a pinch of rice flour to the besan batter.</li>
+            <li>Always fry on medium flame to ensure vadas cook evenly.</li>
+            <li>Use freshly made pav for best texture and flavor.</li>
+            <li>Adjust chili according to your spice preference.</li>
+            <li>Can be made ahead — reheat vadas in oven or air fryer before serving.</li>
+            <li>Serve with hot masala chai for the ultimate Mumbai experience!</li>
+        </ul>
+
+        <div class="video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K9R7KcaettM?si=1Z8rujXM9_ORlZwL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

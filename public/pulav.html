@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Pulav Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f0f8f0;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #c8e6c9, #f0f8f0);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #388e3c;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #e8f5e9;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #2e7d32;
+        }
+
+        .info-card h3 {
+            color: #2e7d32;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #2e7d32;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Vegetable Pulav</h1>
+            <p>A fragrant one-pot rice dish loaded with colorful vegetables and aromatic spices — the perfect comfort meal that's wholesome, flavorful, and loved by all!</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="veg-pulav.png" alt="Delicious Vegetable Pulav">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>15 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>25 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Rice:</h3>
+        <ul>
+            <li>1½ cups basmati rice (soaked for 30 minutes)</li>
+            <li>3 cups water</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>For the Vegetables:</h3>
+        <ul>
+            <li>1 cup mixed vegetables (carrots, beans, peas, corn)</li>
+            <li>1 medium potato, cubed</li>
+            <li>1 medium onion, thinly sliced</li>
+            <li>1 medium tomato, chopped</li>
+            <li>2-3 green chilies, slit</li>
+            <li>1 tbsp ginger-garlic paste</li>
+        </ul>
+
+        <h3>Whole Spices:</h3>
+        <ul>
+            <li>2-3 bay leaves</li>
+            <li>4-5 cloves</li>
+            <li>2-3 green cardamom pods</li>
+            <li>1 black cardamom (optional)</li>
+            <li>1-inch cinnamon stick</li>
+            <li>1 tsp cumin seeds</li>
+            <li>2-3 black peppercorns</li>
+            <li>1 star anise (optional)</li>
+        </ul>
+
+        <h3>Ground Spices:</h3>
+        <ul>
+            <li>½ tsp turmeric powder</li>
+            <li>1 tsp red chili powder</li>
+            <li>1 tsp coriander powder</li>
+            <li>1 tsp garam masala</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>Other Ingredients:</h3>
+        <ul>
+            <li>3 tbsp ghee or oil</li>
+            <li>A handful of fresh mint leaves</li>
+            <li>A handful of fresh coriander leaves</li>
+            <li>2 tbsp fried onions (for garnish)</li>
+            <li>A few drops of lemon juice</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Rice:</strong>
+                <ul>
+                    <li>Rinse basmati rice 2-3 times until water runs clear.</li>
+                    <li>Soak in water for 30 minutes, then drain completely.</li>
+                    <li>This helps in getting perfectly separated, fluffy rice grains.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Vegetables:</strong>
+                <ul>
+                    <li>Wash and chop all vegetables into uniform small pieces.</li>
+                    <li>Keep carrots, beans, peas, corn, and potatoes ready.</li>
+                    <li>Finely chop onion, tomato, and green chilies.</li>
+                    <li>Chop mint and coriander leaves for garnishing.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Temper the Whole Spices:</strong>
+                <ul>
+                    <li>Heat ghee or oil in a heavy-bottomed pan or pressure cooker.</li>
+                    <li>Add cumin seeds and let them splutter.</li>
+                    <li>Add bay leaves, cinnamon, cardamom, cloves, peppercorns, and star anise.</li>
+                    <li>Sauté for 30 seconds until fragrant.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Sauté Aromatics and Vegetables:</strong>
+                <ul>
+                    <li>Add sliced onions and green chilies, sauté until golden brown.</li>
+                    <li>Add ginger-garlic paste and cook for 1 minute until raw smell disappears.</li>
+                    <li>Add chopped tomatoes and cook until soft and mushy.</li>
+                    <li>Add all the mixed vegetables and potato cubes.</li>
+                    <li>Stir well and cook for 2-3 minutes.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add Spices and Rice:</strong>
+                <ul>
+                    <li>Add turmeric, red chili powder, coriander powder, and salt.</li>
+                    <li>Mix well and cook for 1 minute to roast the spices.</li>
+                    <li>Add the drained rice and gently mix with the vegetables.</li>
+                    <li>Sauté for 2 minutes, coating rice with spices (be gentle to avoid breaking grains).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Cook the Pulav (Choose Your Method):</strong>
+                <ul>
+                    <li><strong>Stovetop Method:</strong> Add 3 cups water and bring to a boil. Reduce heat to low, cover with a tight lid, and cook for 15-18 minutes until rice is done. Turn off heat and let it rest for 5 minutes.</li>
+                    <li><strong>Pressure Cooker Method:</strong> Add 3 cups water, close the lid, and cook for 1 whistle on high heat. Turn off the heat and let pressure release naturally.</li>
+                    <li><strong>Rice Cooker Method:</strong> Transfer everything to a rice cooker, add water, and cook on rice setting.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Final Touch:</strong>
+                <ul>
+                    <li>Once cooked, gently fluff the pulav with a fork.</li>
+                    <li>Sprinkle garam masala and mix gently.</li>
+                    <li>Add chopped mint and coriander leaves.</li>
+                    <li>Drizzle a few drops of lemon juice for freshness.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Transfer pulav to a serving dish.</li>
+                    <li>Garnish with fried onions and fresh herbs.</li>
+                    <li>Serve hot with raita, papad, pickle, and a squeeze of lemon!</li>
+                    <li>Perfect for lunch boxes, dinner parties, or a comforting weeknight meal.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🌿</h2>
+        <ul>
+            <li>Always use aged basmati rice for the best texture and aroma.</li>
+            <li>The rice-to-water ratio is crucial: 1:2 for perfect fluffy pulav.</li>
+            <li>Don't skip soaking the rice — it reduces cooking time and prevents mushiness.</li>
+            <li>You can add cashews and raisins for a richer, festive version.</li>
+            <li>For extra flavor, use vegetable stock instead of plain water.</li>
+            <li>Add a pinch of saffron soaked in warm milk for special occasions.</li>
+            <li>Paneer cubes or boiled eggs can be added for extra protein.</li>
+            <li>Make it spicier by adding more green chilies or red chili powder.</li>
+            <li>Leftover pulav can be transformed into pulav cutlets or fried rice!</li>
+            <li>Store in an airtight container in the fridge for up to 2 days.</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YQCT2K1sNike" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

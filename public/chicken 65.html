@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken 65 Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8f2;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffe0d4, #fff8f2);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #d62828;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #d62828;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #f03a3a;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff1e6;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #d62828;
+        }
+
+        .info-card h3 {
+            color: #d62828;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #d62828;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #d62828;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #d62828;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Chicken 65</h1>
+            <p>The legendary South Indian appetizer — crispy, spicy, deep-fried chicken bites with a tangy kick, tempered with curry leaves and red chilies for an addictive flavor.</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="chicken-65.png" alt="Delicious Chicken 65">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>20 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>25 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Easy</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Marinade:</h3>
+        <ul>
+            <li>500g boneless chicken (cut into bite-sized cubes)</li>
+            <li>2 tbsp yogurt</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>2 tsp red chili powder</li>
+            <li>½ tsp turmeric powder</li>
+            <li>1 tsp black pepper powder</li>
+            <li>1 tsp garam masala</li>
+            <li>2 tsp lemon juice</li>
+            <li>2 tbsp cornflour</li>
+            <li>1 tbsp all-purpose flour (maida)</li>
+            <li>1 egg (optional, for extra crispiness)</li>
+            <li>Salt to taste</li>
+            <li>Red food color (optional, for vibrant color)</li>
+        </ul>
+
+        <h3>For Tempering:</h3>
+        <ul>
+            <li>2 tbsp oil</li>
+            <li>1 tbsp butter (optional)</li>
+            <li>8-10 curry leaves</li>
+            <li>4-5 dried red chilies</li>
+            <li>4-5 garlic cloves, finely chopped</li>
+            <li>2 green chilies, slit</li>
+            <li>1 onion, sliced (optional)</li>
+        </ul>
+
+        <h3>For Frying:</h3>
+        <ul>
+            <li>Oil for deep frying</li>
+        </ul>
+
+        <h3>For Garnish:</h3>
+        <ul>
+            <li>Fresh coriander leaves, chopped</li>
+            <li>Lemon wedges</li>
+            <li>Onion rings</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Marinate the Chicken:</strong>
+                <ul>
+                    <li>Cut boneless chicken into bite-sized cubes and wash thoroughly.</li>
+                    <li>In a large bowl, mix yogurt, ginger-garlic paste, red chili powder, turmeric, black pepper, garam masala, lemon juice, and salt.</li>
+                    <li>Add cornflour and all-purpose flour to the marinade.</li>
+                    <li>If using, add beaten egg and a pinch of red food color.</li>
+                    <li>Coat the chicken pieces well with the marinade.</li>
+                    <li>Cover and refrigerate for at least 30 minutes (1-2 hours for best results).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare for Frying:</strong>
+                <ul>
+                    <li>Heat oil in a deep pan or kadai for frying.</li>
+                    <li>The oil should be medium-hot (not smoking).</li>
+                    <li>Test by dropping a small piece of batter — it should sizzle and rise immediately.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>First Fry:</strong>
+                <ul>
+                    <li>Carefully add marinated chicken pieces to the hot oil in batches.</li>
+                    <li>Don't overcrowd the pan.</li>
+                    <li>Fry on medium heat for 5-6 minutes until chicken is cooked through and lightly golden.</li>
+                    <li>Remove and drain on paper towels.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Second Fry (for Extra Crispiness):</strong>
+                <ul>
+                    <li>Increase the oil temperature to high.</li>
+                    <li>Add the partially fried chicken pieces back to the oil.</li>
+                    <li>Fry for 2-3 minutes until deep golden and crispy.</li>
+                    <li>Remove and drain excess oil on paper towels.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Prepare the Tempering:</strong>
+                <ul>
+                    <li>Heat 2 tbsp oil and butter in a separate pan.</li>
+                    <li>Add curry leaves and let them splutter.</li>
+                    <li>Add dried red chilies and fry for 30 seconds.</li>
+                    <li>Add chopped garlic and green chilies, sauté until garlic turns golden.</li>
+                    <li>If using onions, add sliced onions and sauté until translucent.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Toss & Combine:</strong>
+                <ul>
+                    <li>Add the fried chicken pieces to the tempering.</li>
+                    <li>Toss everything together on high heat for 1-2 minutes.</li>
+                    <li>The chicken should be well-coated with the aromatic tempering.</li>
+                    <li>Turn off the heat.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Transfer to a serving plate.</li>
+                    <li>Garnish with fresh coriander leaves and onion rings.</li>
+                    <li>Serve hot with lemon wedges.</li>
+                    <li>Perfect as an appetizer or side dish with drinks!</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🍽️</h2>
+        <ul>
+            <li>For extra crispy chicken, double fry as mentioned in the recipe — it makes a huge difference!</li>
+            <li>Skip the egg for a vegetarian-friendly marinade — cornflour provides enough binding.</li>
+            <li>Adjust the spice level by increasing or decreasing red chili powder and green chilies.</li>
+            <li>Some restaurants add a splash of soy sauce in the tempering for an Indo-Chinese twist.</li>
+            <li>You can air-fry at 200°C for 12-15 minutes for a healthier version (spray with oil).</li>
+            <li>For boneless Chicken 65, use chicken breast. For more flavor, try thigh pieces.</li>
+            <li>The name "65" has many origin stories — some say it's from 1965, others say it needs 65 chilies!</li>
+            <li>Store fried chicken separately and add tempering just before serving to maintain crispiness.</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KQFU0gzl04w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>

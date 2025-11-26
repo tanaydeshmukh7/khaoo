@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Ghee Roast Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #fff8f2;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(90deg, #ffded4, #fff8f2);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #c73e1d;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #c73e1d;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e04b24;
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-img img {
+            width: 85%;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 10%;
+            background-color: #fff1e6;
+            flex-wrap: wrap;
+        }
+
+        .info-card {
+            text-align: center;
+            margin: 15px;
+            width: 150px;
+        }
+
+        .info-card i {
+            font-size: 2.5rem;
+            color: #c73e1d;
+        }
+
+        .info-card h3 {
+            color: #c73e1d;
+            margin-top: 10px;
+        }
+
+        .recipe-section, .steps, .tips {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            color: #c73e1d;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #c73e1d;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            font-size: 1.1rem;
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        ol li {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #c73e1d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Chicken Ghee Roast</h1>
+            <p>A fiery Mangalorean delicacy — succulent chicken roasted in aromatic spices and generous amounts of ghee, delivering bold flavors with every bite.</p>
+            <a href="#recipe" class="btn">Start Cooking</a>
+        </div>
+        <div class="hero-img">
+            <img src="chicken-geeh.png" alt="Delicious Chicken Ghee Roast">
+        </div>
+    </section>
+
+    <!-- Recipe Info -->
+    <section class="info">
+        <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Prep Time</h3>
+            <p>20 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-fire-burner"></i>
+            <h3>Cook Time</h3>
+            <p>45 mins</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Serves</h3>
+            <p>4 People</p>
+        </div>
+        <div class="info-card">
+            <i class="fa-solid fa-star"></i>
+            <h3>Difficulty</h3>
+            <p>Medium</p>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section id="recipe" class="recipe-section">
+        <h2>Ingredients</h2>
+        
+        <h3>For the Chicken:</h3>
+        <ul>
+            <li>500g chicken (bone-in pieces work best)</li>
+            <li>½ tsp turmeric powder</li>
+            <li>Salt to taste</li>
+            <li>2 tbsp lemon juice</li>
+        </ul>
+
+        <h3>For the Spice Paste:</h3>
+        <ul>
+            <li>8-10 dried red Kashmiri chilies (adjust for heat)</li>
+            <li>1 tsp coriander seeds</li>
+            <li>½ tsp cumin seeds</li>
+            <li>½ tsp black peppercorns</li>
+            <li>4-5 garlic cloves</li>
+            <li>1 inch ginger</li>
+            <li>1 tsp tamarind paste</li>
+            <li>2 tbsp water (for grinding)</li>
+        </ul>
+
+        <h3>For Cooking:</h3>
+        <ul>
+            <li>6-8 tbsp ghee (clarified butter)</li>
+            <li>1 large onion, thinly sliced</li>
+            <li>10-12 curry leaves</li>
+            <li>2-3 green chilies, slit</li>
+            <li>1 tsp sugar (optional, to balance heat)</li>
+            <li>Salt to taste</li>
+        </ul>
+
+        <h3>For Garnish:</h3>
+        <ul>
+            <li>Fresh curry leaves</li>
+            <li>Chopped coriander leaves</li>
+            <li>Extra ghee drizzle</li>
+        </ul>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Step-by-Step Cooking Process</h2>
+
+        <ol>
+            <li>
+                <strong>Prepare the Chicken:</strong>
+                <ul>
+                    <li>Clean and wash the chicken pieces thoroughly.</li>
+                    <li>Marinate with turmeric powder, salt, and lemon juice.</li>
+                    <li>Set aside for 15-20 minutes.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Make the Spice Paste:</strong>
+                <ul>
+                    <li>Dry roast Kashmiri chilies, coriander seeds, cumin seeds, and peppercorns on low heat for 2-3 minutes until aromatic.</li>
+                    <li>Let them cool, then grind with garlic, ginger, tamarind paste, and water to make a smooth paste.</li>
+                    <li>The paste should be thick and vibrant red.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Cook the Chicken:</strong>
+                <ul>
+                    <li>Heat 3 tbsp ghee in a heavy-bottomed pan.</li>
+                    <li>Add curry leaves and let them splutter.</li>
+                    <li>Add marinated chicken pieces and cook on medium-high heat for 8-10 minutes until they're partially cooked.</li>
+                    <li>Remove chicken and set aside.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Sauté the Onions:</strong>
+                <ul>
+                    <li>In the same pan, add 2 tbsp ghee.</li>
+                    <li>Add sliced onions and sauté until they turn golden brown and caramelized (8-10 minutes).</li>
+                    <li>Add slit green chilies and more curry leaves.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Add Spice Paste & Roast:</strong>
+                <ul>
+                    <li>Add the ground spice paste to the onions and cook on low-medium heat for 5-7 minutes.</li>
+                    <li>The paste should release oil and turn darker in color.</li>
+                    <li>Add remaining ghee generously — this is the key to authentic ghee roast!</li>
+                    <li>Return the chicken pieces to the pan and coat them well with the masala.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Final Roasting:</strong>
+                <ul>
+                    <li>Cook on medium heat for 15-20 minutes, stirring occasionally.</li>
+                    <li>The chicken should be well-coated with the spice mixture and ghee.</li>
+                    <li>Add sugar if needed to balance the heat.</li>
+                    <li>The dish should have a dry consistency with ghee glistening on top.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Serve:</strong>
+                <ul>
+                    <li>Garnish with fresh curry leaves and coriander.</li>
+                    <li>Drizzle extra ghee on top for authentic flavor.</li>
+                    <li>Serve hot with neer dosa, appam, rice, or roti.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Variations -->
+    <section class="tips">
+        <h2>Variations & Tips 🍽️</h2>
+        <ul>
+            <li>Use Byadgi chilies for authentic Mangalorean flavor and beautiful red color without excessive heat.</li>
+            <li>Don't skimp on the ghee — it's what makes this dish special and gives it the signature taste.</li>
+            <li>Bone-in chicken pieces add more flavor, but you can use boneless if preferred.</li>
+            <li>For extra spice, add more green chilies or use spicier red chilies.</li>
+            <li>The dish tastes even better the next day as the flavors deepen.</li>
+            <li>You can make paneer ghee roast or mushroom ghee roast using the same recipe.</li>
+            <li>Store leftover spice paste in the refrigerator for up to a week.</li>
+        </ul>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xR7Z7jEYR0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by Tanay's Kitchen</p>
+    </footer>
+
+</body>
+</html>
