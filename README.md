@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Khaoo Drinks](assest/biriyani.png)
+
 ![Khaoo Snacks](assest/dal-tadaka.png)
-![Khaoo Meals](assest/lassi.png)
+
 
 **"Create it, Cook it, Crave it, Conquer it!"**
 
