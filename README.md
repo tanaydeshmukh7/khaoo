@@ -8,7 +8,7 @@
 
 **"Create it, Cook it, Crave it, Conquer it!"**
 
-[🚀 Live Demo](https://khaoo-4e311.web.app/) | | [🐛 Report Bug](gmail.com)
+[🚀 Live Demo](https://khaoo-4e311.web.app/) | | [🐛 Report Bug](https://github.com/tanaydeshmukh7/khaoo/issues)
 
 </div>
 
