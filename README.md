@@ -372,6 +372,7 @@ This project is licensed under the MIT License - because sharing is caring!
 - Coffee ☕ - For keeping me awake during those late-night coding sessions
 - Stack Overflow - For answering questions I didn't even know I had
 - Firebase - For making backend development actually enjoyable
+- 🤖 Google Gemini - For creating those mouth-watering, photorealistic food images
 - You - For checking out this project! You're awesome! 🌟
 
 ---
